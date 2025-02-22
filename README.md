@@ -124,7 +124,7 @@ The choice of **architectural style** depends on the application’s complexity,
 
 ==================================
 
-#  **List of Design Principles in C#**
+#  **Design Principles in C#**
 
 Design principles are guidelines that help developers write clean, maintainable, and scalable code. Below are the essential design principles in C#:
 
@@ -236,7 +236,7 @@ Design principles are guidelines that help developers write clean, maintainable,
 
 ==================================
 
-# Design patterns in C# are categorized into three major groups:
+# Design patterns in C#
 
 1. **Creational Patterns** – Focus on object creation mechanisms.
 2. **Structural Patterns** – Deal with object composition and relationships.
