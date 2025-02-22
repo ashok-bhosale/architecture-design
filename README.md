@@ -120,11 +120,11 @@ MVVM (Model-View-ViewModel) is an architectural pattern where the **ViewModel** 
 
 ### Summary:
 
-The choice of **architectural style** depends on the application’s complexity, scalability needs, and the type of communication and components required. C# developers typically use these architectural patterns in **ASP.NET Core**, **Blazor**, **WPF**, and **Xamarin** applications. Would you like to dive deeper into any specific style?
+The choice of **architectural style** depends on the application’s complexity, scalability needs, and the type of communication and components required. C# developers typically use these architectural patterns in **ASP.NET Core**, **Blazor**, **WPF**, and **Xamarin** applications. 
 
 ==================================
 
-### **List of Design Principles in C#**
+#  **List of Design Principles in C#**
 
 Design principles are guidelines that help developers write clean, maintainable, and scalable code. Below are the essential design principles in C#:
 
@@ -236,7 +236,7 @@ Design principles are guidelines that help developers write clean, maintainable,
 
 ==================================
 
-Design patterns in C# are categorized into three major groups:
+# Design patterns in C# are categorized into three major groups:
 
 1. **Creational Patterns** – Focus on object creation mechanisms.
 2. **Structural Patterns** – Deal with object composition and relationships.
