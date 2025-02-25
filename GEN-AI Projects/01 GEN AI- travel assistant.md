@@ -181,7 +181,7 @@ Here's the **ASP.NET Core API** that integrates **GenAI** and fetches travel opt
 - Fetches flight, train, and bus options.
 - Returns the best options to the user.
 
----
+
 
 
 
@@ -250,7 +250,7 @@ public class TravelRequest
     public string Query { get; set; }
 }
 
-//=============Real Time API Calls==============================
+
 
 
 using Microsoft.AspNetCore.Authorization;
