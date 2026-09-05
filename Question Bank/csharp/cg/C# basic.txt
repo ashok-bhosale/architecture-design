@@ -1,0 +1,475 @@
+# 1. C# Fundamentals (25 Questions)
+
+1. What is C#?
+2. What are the features of C#?
+3. What is CLR?
+4. What is CTS?
+5. What is CLS?
+6. What is MSIL/IL?
+7. What is the .NET runtime?
+8. What are namespaces?
+9. What is the Main() method?
+10. Difference between .NET Framework and .NET?
+11. What are assemblies?
+12. What are manifests?
+13. What are references?
+14. What is the Global Assembly Cache (GAC)?
+15. What is JIT compilation?
+16. Types of JIT compiler?
+17. What are value types?
+18. What are reference types?
+19. Difference between stack and heap?
+20. What is boxing?
+21. What is unboxing?
+22. What are identifiers?
+23. What are keywords?
+24. What are literals?
+25. What are comments in C#?
+
+---
+
+# 2. Variables and Data Types (15 Questions)
+
+1. What are variables?
+2. Difference between var, dynamic, and object?
+3. What are primitive data types?
+4. What is type conversion?
+5. Implicit vs explicit conversion?
+6. What is Parse()?
+7. What is TryParse()?
+8. What is Convert class?
+9. What is nullable type?
+10. What is Nullable<T>?
+11. What is default value of types?
+12. What is sizeof operator?
+13. What is typeof operator?
+14. What is GetType()?
+15. What is dynamic typing?
+
+---
+
+# 3. Operators and Expressions (10 Questions)
+
+1. Types of operators in C#
+2. Difference between == and Equals()
+3. What is ReferenceEquals()?
+4. What is null-coalescing operator ??
+5. What is null-conditional operator ?.
+6. What is pattern matching?
+7. What is is operator?
+8. What is as operator?
+9. Difference between ++i and i++?
+10. Operator overloading?
+
+---
+
+# 4. Control Statements (10 Questions)
+
+1. if statement
+2. switch statement
+3. switch expressions
+4. while loop
+5. do-while loop
+6. for loop
+7. foreach loop
+8. break statement
+9. continue statement
+10. goto statement
+
+---
+
+# 5. Methods and Parameters (15 Questions)
+
+1. What is a method?
+2. Method overloading?
+3. Method overriding?
+4. Difference between overloading and overriding?
+5. What are optional parameters?
+6. Named parameters?
+7. ref keyword?
+8. out keyword?
+9. in keyword?
+10. params keyword?
+11. Recursive methods?
+12. Local functions?
+13. Static methods?
+14. Extension methods?
+15. Expression-bodied methods?
+
+---
+
+# 6. Object-Oriented Programming (25 Questions)
+
+1. What is OOP?
+2. What are OOP principles?
+3. What is encapsulation?
+4. What is abstraction?
+5. What is inheritance?
+6. What is polymorphism?
+7. What is a class?
+8. What is an object?
+9. Constructor?
+10. Destructor?
+11. Types of constructors?
+12. Copy constructor?
+13. Static constructor?
+14. Private constructor?
+15. What is this keyword?
+16. What is base keyword?
+17. What are access modifiers?
+18. Public vs private?
+19. Protected vs internal?
+20. Sealed class?
+21. Abstract class?
+22. Interface?
+23. Multiple inheritance in C#?
+24. Virtual methods?
+25. Override keyword?
+
+Advanced OOP Concepts (15 Questions)
+
+1. Difference between abstract class and interface?
+2. Explicit interface implementation?
+3. Default interface methods?
+4. Partial classes?
+5. Nested classes?
+6. Static classes?
+7. Object initializers?
+8. Collection initializers?
+9. Record types?
+10. Init-only properties?
+11. Immutable objects?
+12. Struct vs class?
+13. Readonly struct?
+14. Ref struct?
+15. Primary constructors?
+
+---
+
+# 8. Exception Handling (15 Questions)
+
+1. What is exception handling?
+2. try-catch block?
+3. finally block?
+4. throw keyword?
+5. throw vs throw ex?
+6. Custom exceptions?
+7. Exception filters?
+8. AggregateException?
+9. InnerException?
+10. StackTrace?
+11. Global exception handling?
+12. Checked and unchecked?
+13. Overflow exceptions?
+14. Best practices for exceptions?
+15. When should exceptions not be used?
+
+---
+
+# 9. Collections (20 Questions)
+
+1. What is Array?
+2. ArrayList?
+3. List<T>?
+4. Dictionary<TKey,TValue>?
+5. Hashtable?
+6. Queue<T>?
+7. Stack<T>?
+8. LinkedList<T>?
+9. HashSet<T>?
+10. SortedSet<T>?
+11. Concurrent collections?
+12. ReadOnlyCollection?
+13. Collection interfaces?
+14. IEnumerable?
+15. ICollection?
+16. IList?
+17. IDictionary?
+18. Difference between List and Array?
+19. Dictionary vs Hashtable?
+20. Collection performance?
+
+---
+
+# 10. Generics (10 Questions)
+
+1. What are generics?
+2. Benefits of generics?
+3. Generic classes?
+4. Generic methods?
+5. Generic constraints?
+6. where T : class?
+7. where T : struct?
+8. where T : new()?
+9. Covariance?
+10. Contravariance?
+
+---
+
+# 11. Delegates and Events (20 Questions)
+
+1. What is a delegate?
+2. Types of delegates?
+3. Multicast delegate?
+4. Action delegate?
+5. Func delegate?
+6. Predicate delegate?
+7. Anonymous methods?
+8. Lambda expressions?
+9. Expression trees?
+10. Events?
+11. Event handlers?
+12. Event publisher/subscriber?
+13. Custom events?
+14. Difference between delegate and event?
+15. Callback functions?
+16. Closures?
+17. Captured variables?
+18. Event memory leaks?
+19. Weak events?
+20. Practical use cases?
+
+---
+
+# 12. LINQ (25 Questions)
+
+1. What is LINQ?
+2. Benefits of LINQ?
+3. LINQ architecture?
+4. LINQ to Objects?
+5. LINQ to XML?
+6. LINQ to SQL?
+7. LINQ to Entities?
+8. Query syntax?
+9. Method syntax?
+10. Select()?
+11. Where()?
+12. OrderBy()?
+13. GroupBy()?
+14. Join()?
+15. GroupJoin()?
+16. SelectMany()?
+17. First() vs FirstOrDefault()?
+18. Single() vs SingleOrDefault()?
+19. Any()?
+20. All()?
+21. Count()?
+22. Deferred execution?
+23. Immediate execution?
+24. IQueryable vs IEnumerable?
+25. LINQ performance?
+
+---
+
+# 13. Memory Management (15 Questions)
+
+1. What is Garbage Collection?
+2. Generations in GC?
+3. GC roots?
+4. Managed memory?
+5. Unmanaged memory?
+6. IDisposable?
+7. using statement?
+8. Finalizers?
+9. Dispose pattern?
+10. WeakReference?
+11. Memory leaks?
+12. LOH (Large Object Heap)?
+13. GC.Collect()?
+14. Memory profiling?
+15. Best practices?
+
+---
+
+# 14. Multithreading & Parallel Programming (20 Questions)
+
+1. What is a thread?
+2. Thread lifecycle?
+3. Thread class?
+4. ThreadPool?
+5. Task Parallel Library (TPL)?
+6. Task vs Thread?
+7. async and await?
+8. Synchronization?
+9. lock statement?
+10. Mutex?
+11. Semaphore?
+12. SemaphoreSlim?
+13. Monitor?
+14. Interlocked?
+15. Deadlock?
+16. Race condition?
+17. CancellationToken?
+18. Parallel.For?
+19. PLINQ?
+20. Concurrent collections?
+
+---
+
+# 15. Asynchronous Programming (10 Questions)
+
+1. What is asynchronous programming?
+2. async keyword?
+3. await keyword?
+4. Task?
+5. Task<T>?
+6. ValueTask?
+7. ConfigureAwait(false)?
+8. Async streams?
+9. IAsyncEnumerable?
+10. Async exception handling?
+
+# 16. Reflection & Attributes (10 Questions)
+
+1. What is Reflection?
+2. Uses of Reflection?
+3. Assembly loading?
+4. Type metadata?
+5. Custom attributes?
+6. Built-in attributes?
+7. AttributeUsage?
+8. Dynamic object creation?
+9. Reflection performance?
+10. Reflection vs source generators?
+
+---
+
+# 17. File Handling & Serialization (10 Questions)
+
+1. File class?
+2. Directory class?
+3. Stream classes?
+4. StreamReader?
+5. StreamWriter?
+6. Binary serialization?
+7. JSON serialization?
+8. XML serialization?
+9. System.Text.Json?
+10. Serialization attributes?
+
+---
+
+# 18. Dependency Injection (10 Questions)
+
+1. What is Dependency Injection?
+2. Benefits of DI?
+3. Constructor injection?
+4. Property injection?
+5. Method injection?
+6. Service lifetimes?
+7. Singleton?
+8. Scoped?
+9. Transient?
+10. IoC Container?
+
+---
+
+# 19. ASP.NET Core & Web API (15 Questions)
+
+1. What is ASP.NET Core?
+2. Middleware?
+3. Routing?
+4. Dependency Injection in ASP.NET Core?
+5. Controllers?
+6. Action methods?
+7. Model binding?
+8. Filters?
+9. Authentication?
+10. Authorization?
+11. JWT Authentication?
+12. REST API?
+13. API Versioning?
+14. Minimal APIs?
+15. Swagger/OpenAPI?
+
+---
+
+# 20. Entity Framework Core (10 Questions)
+
+1. What is EF Core?
+2. DbContext?
+3. DbSet?
+4. Code First vs Database First?
+5. Migrations?
+6. Change Tracking?
+7. Lazy Loading?
+8. Eager Loading?
+9. Explicit Loading?
+10. Repository Pattern?
+
+# 21. Design Patterns (20 Questions)
+
+1. Singleton Pattern
+2. Factory Pattern
+3. Abstract Factory Pattern
+4. Builder Pattern
+5. Prototype Pattern
+6. Adapter Pattern
+7. Facade Pattern
+8. Decorator Pattern
+9. Proxy Pattern
+10. Strategy Pattern
+11. Observer Pattern
+12. Command Pattern
+13. Mediator Pattern
+14. Chain of Responsibility
+15. State Pattern
+16. Template Method
+17. Dependency Injection Pattern
+18. CQRS
+19. Unit of Work
+20. Repository Pattern
+
+---
+
+# 22. Advanced C# Topics (25 Questions)
+
+1. Span<T>
+2. Memory<T>
+3. ReadOnlySpan<T>
+4. Unsafe code?
+5. Pointers in C#?
+6. Expression trees?
+7. Source Generators?
+8. Roslyn Compiler?
+9. Dynamic Language Runtime?
+10. Tuples?
+11. Records?
+12. Pattern Matching?
+13. Switch Expressions?
+14. Nullable Reference Types?
+15. Global Using?
+16. Top-Level Statements?
+17. File-scoped namespaces?
+18. Required properties?
+19. Generic math?
+20. Interceptors (future features)?
+21. Native AOT?
+22. Ahead-of-Time Compilation?
+23. Performance optimization?
+24. BenchmarkDotNet?
+25. High-performance C# coding practices?
+
+If you're preparing for 5–15 years experience interviews, focus especially on:
+
+- CLR, CTS, CLS
+- Garbage Collection
+- Stack vs Heap
+- Boxing/Unboxing
+- IDisposable and Dispose Pattern
+- Delegates, Events, Lambda Expressions
+- LINQ Internals
+- IEnumerable vs IQueryable
+- Abstract Class vs Interface
+- Struct vs Class
+- async/await Internals
+- Task vs Thread
+- Deadlocks and Synchronization
+- Dependency Injection
+- Design Patterns
+- Entity Framework Core
+- ASP.NET Core Middleware
+- JWT Authentication
+- Memory Optimization
+- Span<T> and Memory<T>
+- SOLID Principles

@@ -1,0 +1,396 @@
+Entity Framework Core Interview Questions – Part 1 (Questions 1–50)
+EF Core Fundamentals, DbContext, Migrations, Modeling, and Relationships
+These questions are suitable for Senior .NET Developers, Technical Leads, and Solution Architects.
+
+Section 1: Entity Framework Core Fundamentals (1–15)
+	1. What is Entity Framework Core?
+	2. What are the advantages of using EF Core?
+	3. What is an ORM?
+	4. How does EF Core differ from Entity Framework 6?
+	5. What databases are supported by EF Core?
+	6. What is the role of DbContext?
+	7. What is DbSet<T>?
+	8. How does EF Core track entities?
+	9. What is the EF Core change tracker?
+	10. What is the purpose of SaveChanges()?
+	11. What is the difference between SaveChanges() and SaveChangesAsync()?
+	12. What is the EF Core provider model?
+	13. What are the different approaches supported by EF Core?
+	14. What is Code First?
+	15. What is Database First?
+
+Section 2: DbContext and Configuration (16–25)
+	16. How do you configure a DbContext in ASP.NET Core?
+	17. What is the purpose of OnConfiguring()?
+	18. What is the purpose of OnModelCreating()?
+	19. How do you register DbContext using Dependency Injection?
+	20. Why is DbContext typically registered as Scoped?
+	21. What problems occur if DbContext is registered as Singleton?
+	22. What is DbContextOptions<TContext>?
+	23. How do you configure connection strings?
+	24. What is DbContextFactory?
+	25. When should IDbContextFactory<T> be used?
+
+Section 3: Migrations (26–35)
+	26. What are migrations in EF Core?
+	27. Why are migrations important?
+	28. What command creates a migration?
+	29. What command applies migrations to the database?
+	30. What command removes the last migration?
+	31. What is a migration snapshot?
+	32. What happens when multiple developers create migrations simultaneously?
+	33. How do you resolve migration conflicts?
+	34. Can migrations be customized?
+	35. What are best practices for migrations in production?
+
+Section 4: Entity Configuration (36–45)
+	36. What are Data Annotations?
+	37. What is Fluent API?
+	38. Difference between Data Annotations and Fluent API?
+	39. When should Fluent API be preferred?
+	40. How do you configure table names using Fluent API?
+	41. How do you configure column names?
+	42. How do you configure required fields?
+	43. How do you configure maximum lengths?
+	44. How do you configure default values?
+	45. How do you configure indexes?
+
+Section 5: Keys and Relationships (46–50)
+	46. What is a primary key?
+	47. What are conventions used by EF Core to identify primary keys?
+	48. What is a composite key?
+	49. What is an alternate key?
+	50. What is a foreign key?
+
+Architect-Level Discussion Topics
+You should also be prepared to answer questions such as:
+DbContext Lifetime
+	• Why is DbContext not thread-safe?
+	• How would you manage DbContext in background services?
+Migrations Strategy
+	• Should migrations run automatically in production?
+	• How would you manage migrations across multiple environments?
+Modeling Decisions
+	• When would you use Data Annotations versus Fluent API in enterprise applications?
+	• How would you standardize entity configurations across large teams?
+Database Strategy
+	• When would you choose Code First?
+	• When would Database First be a better choice?
+
+Topics Covered in Part 1
+✅ EF Core Fundamentals
+✅ ORM Concepts
+✅ DbContext and DbSet
+✅ Dependency Injection Configuration
+✅ Connection Management
+✅ Migrations
+✅ Entity Configuration
+✅ Fluent API
+✅ Keys and Constraints
+
+Upcoming Parts
+Part 2 (51–100)
+	• One-to-One Relationships
+	• One-to-Many Relationships
+	• Many-to-Many Relationships
+	• Navigation Properties
+	• Eager Loading
+	• Lazy Loading
+	• Explicit Loading
+	• Include and ThenInclude
+	• LINQ with EF Core
+	• Tracking vs NoTracking
+	• Query Execution
+	• Transactions
+	• Concurrency Handling
+Part 3 (101–150)
+	• Performance Optimization
+	• Compiled Queries
+	• Query Splitting
+	• Interceptors
+	• Shadow Properties
+	• Value Converters
+	• Global Query Filters
+	• Soft Deletes
+	• Auditing
+	• Repository Pattern
+	• Unit of Work
+	• Multi-Tenancy
+	• Bulk Operations
+	• EF Core Architect Scenario Questions
+When you're ready, ask for "Entity Framework Core Part 2 (51–100)" to continue building your complete 150-question EF Core Architect Interview Bank.
+
+From <https://chatgpt.com/c/6a23e92d-00d4-83e8-abd9-10c5b8a5c06d> 
+
+
+
+
+
+
+Entity Framework Core Architect Interview Questions – Part 2 (51–100)
+Patterns, Multi-Tenancy, Auditing, Scaling & Cloud-Native Design
+These questions focus on architectural decision-making rather than API syntax. Interviewers often use them to assess whether you can design maintainable, scalable, and enterprise-grade data access solutions.
+
+Section 6: Repository and Unit of Work Patterns (51–60)
+	1. What problem does the Repository Pattern aim to solve?
+	2. Is DbContext already an implementation of Repository and Unit of Work?
+	3. When does adding a custom repository provide value?
+	4. What are the drawbacks of generic repositories?
+	5. When should you avoid the Repository Pattern with EF Core?
+	6. How would you structure repositories in a large enterprise application?
+	7. Should repositories expose IQueryable? Why or why not?
+	8. How do you prevent business logic from leaking into repositories?
+	9. How would you unit test repository implementations?
+	10. What standards would you establish for repository usage across multiple teams?
+
+Section 7: Global Query Filters and Soft Deletes (61–68)
+	1. What are global query filters?
+	2. How do you implement soft deletes using EF Core?
+	3. What are the business advantages of soft deletes?
+	4. What operational risks do soft deletes introduce?
+	5. How can global query filters impact performance?
+	6. How would you allow administrators to bypass soft-delete filters?
+	7. How do global query filters support multi-tenancy?
+	8. What governance rules would you establish around data retention and soft deletes?
+
+Section 8: Auditing and Change History (69–76)
+	1. What information should be captured for auditing?
+	2. How would you automatically populate CreatedDate and ModifiedDate fields?
+	3. Would you implement auditing in entities, interceptors, or the database? Why?
+	4. What are EF Core interceptors?
+	5. How can SaveChanges interceptors be used for auditing?
+	6. How would you capture the identity of the user making changes?
+	7. How would you implement a complete audit trail for regulatory compliance?
+	8. When should database-native auditing be preferred over application-level auditing?
+
+Section 9: Multi-Tenancy Architecture (77–86)
+	1. What is multi-tenancy?
+	2. What are the common multi-tenancy models?
+	3. What are the advantages of a database-per-tenant approach?
+	4. What are the disadvantages of a database-per-tenant approach?
+	5. What are the advantages of a shared database with a TenantId discriminator?
+	6. What risks exist in a shared-database approach?
+	7. How would you enforce tenant isolation in EF Core?
+	8. How can global query filters support tenant isolation?
+	9. How would you migrate thousands of tenant databases safely?
+	10. What multi-tenancy model would you choose for a SaaS platform serving small businesses, and why?
+
+Section 10: Bulk Operations and High-Volume Data Processing (87–92)
+	1. Why can SaveChanges() become inefficient for bulk operations?
+	2. How would you handle importing millions of records efficiently?
+	3. What techniques would you use for bulk updates?
+	4. What trade-offs exist between EF Core and specialized bulk libraries?
+	5. When would you bypass EF Core entirely for data-loading scenarios?
+	6. How would you design a high-throughput data ingestion pipeline?
+
+Section 11: Scaling EF Core Applications (93–100)
+	1. How would you scale read-heavy EF Core applications?
+	2. What is a read replica, and how would EF Core use it?
+	3. When would CQRS be appropriate in an EF Core-based system?
+	4. How would you separate read and write workloads?
+	5. What caching strategies work well with EF Core applications?
+	6. How would you maintain cache consistency when data changes?
+	7. How would you design EF Core data access for a cloud-native microservices environment?
+	8. What EF Core architectural principles would you mandate for applications expected to scale to millions of users?
+
+Architect Scenario Discussions
+Multi-Tenant SaaS Scenario
+	Your SaaS application has 5,000 customers. Some enterprise customers require strict data isolation, while smaller customers prioritize lower costs.
+	• Would you choose database-per-tenant, shared database, or a hybrid model?
+	• How would you handle onboarding new tenants?
+	• How would you approach tenant-specific migrations?
+
+Auditing Scenario
+	A healthcare application must maintain a complete history of every data change for seven years.
+	• Would you implement auditing in EF Core, SQL Server, or both?
+	• How would you ensure audit records cannot be tampered with?
+	• What performance considerations would you evaluate?
+
+Scaling Scenario
+	An application receives 50,000 read requests per minute and 2,000 write requests per minute.
+	• Would you introduce caching?
+	• Would you use read replicas?
+	• Would CQRS improve scalability?
+	• How would you monitor database health?
+
+Key Architect Principles for Part 2
+Repository Usage
+	• Avoid unnecessary abstraction.
+	• Introduce repositories only when they provide clear business value.
+	• Keep data access concerns separate from domain logic.
+Multi-Tenancy
+	• Design tenant isolation intentionally.
+	• Align tenancy strategy with business requirements.
+	• Consider operational complexity, cost, and compliance.
+Auditing
+	• Define auditing requirements early.
+	• Ensure consistency across services.
+	• Balance traceability with performance.
+Scalability
+	• Optimize reads separately from writes.
+	• Use caching thoughtfully.
+	• Plan for growth before performance becomes a crisis.
+
+Part 2 Coverage
+✅ Repository and Unit of Work Decisions
+✅ Global Query Filters
+✅ Soft Deletes
+✅ Auditing Strategies
+✅ Interceptors
+✅ Multi-Tenant SaaS Design
+✅ Bulk Operations
+✅ High-Volume Data Processing
+✅ Read Scaling
+✅ CQRS Considerations
+✅ Cloud-Native EF Core Principles
+Ask for "EF Core Architect Part 3 (101–150)" to complete the full architect-level interview bank, covering production troubleshooting, diagnostics, deployment strategies, governance, and advanced scenario-based questions.
+
+From <https://chatgpt.com/c/6a23e92d-00d4-83e8-abd9-10c5b8a5c06d> 
+
+
+
+Entity Framework Core Architect Interview Questions – Part 3 (101–150)
+Production Troubleshooting, Governance, Deployment, Security & Architect Scenarios
+These questions focus on what distinguishes a Solution Architect from a Senior Developer: diagnosing production issues, making trade-off decisions, and establishing enterprise-wide standards.
+
+Section 12: Production Diagnostics and Troubleshooting (101–110)
+	1. How would you troubleshoot a sudden increase in database response times?
+	2. What logs would you enable to diagnose EF Core issues?
+	3. How can EF Core-generated SQL be captured in production safely?
+	4. What tools would you use to analyze database performance?
+	5. How would you determine whether performance issues originate from EF Core or the database?
+	6. What metrics should be monitored for EF Core applications?
+	7. How would you investigate intermittent timeout exceptions?
+	8. What steps would you take if connection pool exhaustion occurs?
+	9. How would you diagnose excessive memory consumption caused by EF Core?
+	10. What is your approach to conducting a post-incident review after a data-access outage?
+
+Section 13: Connection Management and Resilience (111–118)
+	1. How does connection pooling work?
+	2. What can cause connection pool starvation?
+	3. How would you configure retry policies for transient failures?
+	4. What is the purpose of execution strategies in EF Core?
+	5. When should retries not be used?
+	6. How would you prevent duplicate writes during retries?
+	7. How would you design EF Core applications to tolerate temporary database outages?
+	8. What resilience standards would you establish for enterprise systems?
+
+Section 14: Migrations and Deployment Strategy (119–126)
+	1. Should migrations be executed automatically during application startup?
+	2. What are the risks of automatic migrations in production?
+	3. How would you manage migrations across Development, QA, UAT, and Production environments?
+	4. How would you coordinate migrations across multiple microservices?
+	5. How would you minimize downtime during schema changes?
+	6. What is a backward-compatible database migration?
+	7. How would you roll back a failed database deployment?
+	8. What governance policies would you define for migration approvals?
+
+Section 15: Security and Data Protection (127–134)
+	1. What EF Core practices help prevent SQL injection?
+	2. When can SQL injection risks reappear despite using EF Core?
+	3. How would you secure sensitive connection strings?
+	4. What role does a secret management system play in EF Core applications?
+	5. How would you implement row-level security requirements?
+	6. How would you prevent accidental exposure of sensitive columns through APIs?
+	7. How would you address data encryption requirements at rest and in transit?
+	8. What data-access security standards should development teams follow?
+
+Section 16: Governance and Standards (135–140)
+	1. What EF Core coding standards would you establish across teams?
+	2. How would you standardize entity configurations?
+	3. Should all queries default to AsNoTracking()? Why or why not?
+	4. How would you enforce architectural guidelines related to EF Core usage?
+	5. How would you review EF Core implementations during architecture reviews?
+	6. What documentation should accompany enterprise EF Core solutions?
+
+Section 17: Cloud-Native and Distributed Architectures (141–145)
+	1. What challenges arise when EF Core is used in microservices?
+	2. Should multiple microservices share the same database? Why or why not?
+	3. How would you implement eventual consistency in EF Core-based systems?
+	4. How do Outbox and Inbox patterns improve reliability?
+	5. What role does EF Core play in CQRS architectures?
+
+Section 18: Architect Scenario-Based Questions (146–150)
+	1. High-Traffic E-Commerce Scenario
+	Your platform receives 200,000 product searches per hour, while inventory updates occur continuously.
+	• How would you design EF Core usage for reads and writes?
+	• Would you introduce caching, read replicas, or CQRS?
+	• How would you maintain consistency?
+
+	1. Global SaaS Expansion Scenario
+	A SaaS platform operating in multiple countries must support tenant isolation, regional compliance requirements, and rapid onboarding.
+	• What tenancy model would you select?
+	• How would you manage migrations?
+	• How would you handle data residency regulations?
+
+	1. Production Performance Crisis Scenario
+	Response times increase from 200 ms to 8 seconds after a new release.
+	• What investigation steps would you take?
+	• How would you identify problematic queries?
+	• What safeguards would you introduce to prevent recurrence?
+
+	1. Microservices Data Consistency Scenario
+	An order-processing workflow spans Order, Inventory, Payment, and Shipping services.
+	• Why should EF Core transactions not span services?
+	• How would you design consistency mechanisms?
+	• What trade-offs would you communicate to stakeholders?
+
+	1. Enterprise Governance Scenario
+	You are the Chief Architect responsible for 25 development teams using EF Core.
+	• What standards would you mandate?
+	• How would you enforce performance and security guidelines?
+	• How would you balance flexibility with consistency?
+
+Architect Decision Frameworks
+Performance
+	• Prefer projections for APIs.
+	• Use AsNoTracking() for read-heavy workloads.
+	• Avoid N+1 queries.
+	• Review execution plans regularly.
+	• Benchmark before optimizing.
+Reliability
+	• Design for transient failures.
+	• Apply retries thoughtfully.
+	• Ensure idempotency where retries occur.
+	• Monitor connection pool usage.
+Security
+	• Store secrets outside source control.
+	• Limit data exposure through DTOs.
+	• Apply least-privilege principles.
+	• Review raw SQL carefully.
+Governance
+	• Establish migration review processes.
+	• Standardize entity configurations.
+	• Define conventions for auditing and soft deletes.
+	• Perform periodic architecture assessments.
+Distributed Systems
+	• Avoid shared databases between independent services.
+	• Favor eventual consistency over distributed transactions.
+	• Use Outbox/Saga patterns where appropriate.
+	• Recognize that scalability often requires accepting operational complexity.
+
+Complete EF Core Architect Interview Bank Summary
+Part 1 (1–50)
+	• Query Optimization
+	• Tracking Strategies
+	• Transactions
+	• Concurrency
+	• Performance Diagnostics
+Part 2 (51–100)
+	• Repository Decisions
+	• Soft Deletes
+	• Auditing
+	• Multi-Tenancy
+	• Scaling and CQRS
+Part 3 (101–150)
+	• Production Troubleshooting
+	• Connection Resilience
+	• Migration Governance
+	• Security Standards
+	• Cloud-Native Architectures
+	• Enterprise Scenario Questions
+Mastering these 150 architect-focused EF Core questions will prepare you for discussions expected of Solution Architects, Principal Engineers, and Technical Leaders, where success depends not only on knowing EF Core features, but also on understanding their trade-offs in real-world systems.
+
+From <https://chatgpt.com/c/6a23e92d-00d4-83e8-abd9-10c5b8a5c06d> 
+
+

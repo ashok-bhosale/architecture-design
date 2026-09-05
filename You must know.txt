@@ -1,0 +1,246 @@
+🧠 .NET Architect Interview Handbook (Final Consolidated)
+1. C# Language & Core Concepts
+CLR, CTS, CLS, JIT, Assemblies, Namespaces, GAC
+
+Value vs Reference types, Stack vs Heap, Boxing/Unboxing
+
+Variables, Data Types, Operators, Control Statements
+
+Methods & Parameters (ref, out, in, params)
+
+Exception Handling (try-catch-finally, throw vs throw ex, custom exceptions)
+
+Collections & Generics (List, Dictionary, HashSet, constraints, covariance/contravariance)
+
+Delegates & Events (Action, Func, Predicate, Lambda, Closures)
+
+LINQ (Query vs Method syntax, Select, Where, GroupBy, Join, IEnumerable vs IQueryable)
+
+Memory Management (GC, IDisposable, Dispose Pattern, WeakReference, LOH)
+
+Multithreading & Async (Thread vs Task, TPL, async/await, Deadlocks, CancellationToken)
+
+Reflection & Attributes, File Handling, Serialization
+
+Dependency Injection basics
+
+Design Patterns (Singleton, Factory, Strategy, Observer, Mediator, CQRS, Repository, Unit of Work)
+
+Advanced Topics (Span<T>, Source Generators, Roslyn, AOT, Performance optimization)
+
+2. ASP.NET MVC
+MVC Fundamentals: Request lifecycle, Controller, View, Model
+
+Routing (RouteConfig, Attribute routing, Convention-based routing)
+
+ViewData vs ViewBag vs TempData
+
+HTML Helpers, Tag Helpers, Partial Views, Layout Pages
+
+ActionResult types (JsonResult, FileResult, RedirectResult, ViewResult)
+
+Filters (Authorization, Exception, Result, Resource)
+
+Model Binding & Validation (Data Annotations, ModelState, AntiForgeryToken)
+
+Security (CSRF, XSS, SQL Injection prevention)
+
+EF Integration (DbContext, DbSet, Lazy/Eager/Explicit loading, Transactions)
+
+Performance & Caching (Output, Response, Distributed caching)
+
+Testing & Maintainability (Unit testing controllers, Mocking, DI)
+
+Architect-Level: Clean Architecture, Multi-Tenancy, Migration to Core
+
+3. ASP.NET Core Web API
+REST principles, HTTP methods, Status codes, Content negotiation
+
+Controllers & Routing ([ApiController], attribute vs conventional routing, IActionResult types)
+
+Model Binding ([FromBody], [FromQuery], [FromRoute], DTOs, AutoMapper)
+
+Validation (Data Annotations, FluentValidation, Preventing over-posting)
+
+Dependency Injection (Service lifetimes: Singleton, Scoped, Transient)
+
+Middleware pipeline (Exception, Logging, Authentication, Authorization, CORS, Compression)
+
+Authentication & Authorization (JWT, OAuth2, OpenID Connect, Roles, Policies)
+
+EF Core with APIs (DbContext, Migrations, Transactions, Concurrency, Repository, Unit of Work)
+
+Logging & Exception Handling (ILogger, Serilog, NLog, ProblemDetails, OpenTelemetry)
+
+API Documentation & Versioning (Swagger, OpenAPI, URL/Header/Query versioning)
+
+Performance & Scalability (Caching, Redis, Pagination, Rate limiting, Circuit breaker, Retry)
+
+Testing (Unit, Integration, Contract, Postman/Newman, Load testing)
+
+Architect-Level: Microservices integration, Docker/Kubernetes deployment, Azure API Management
+
+4. Entity Framework Core
+Fundamentals: ORM, DbContext, DbSet, Change Tracking, SaveChanges vs SaveChangesAsync
+
+Configuration: OnConfiguring, OnModelCreating, DI, Connection strings, DbContextFactory
+
+Migrations: Create, Apply, Remove, Snapshot, Conflict resolution, Best practices
+
+Entity Configuration: Data Annotations vs Fluent API, Table/Column names, Required fields, Indexes
+
+Keys & Relationships: Primary, Composite, Alternate, Foreign keys
+
+Query Optimization: N+1 problem, Eager vs Lazy vs Explicit loading, AsNoTracking, Projections, Compiled queries
+
+Transactions & Concurrency: BeginTransaction, RowVersion, DbUpdateConcurrencyException
+
+Repository & Unit of Work: Pros/cons, Standards, Testing, Avoiding IQueryable leaks
+
+Global Query Filters & Soft Deletes
+
+Auditing & Change History (Interceptors, SaveChanges auditing, Compliance)
+
+Multi-Tenancy (Database-per-tenant vs Shared DB, Tenant isolation, Migrations)
+
+Bulk Operations & High-Volume Data Processing
+
+Scaling EF Core Applications (Read replicas, CQRS, Caching strategies)
+
+Production Diagnostics (SQL capture, Connection pool exhaustion, Timeout handling)
+
+Connection Management & Resilience (Retry policies, Execution strategies)
+
+Security & Data Protection (SQL Injection prevention, Secret management, Row-level security, Encryption)
+
+Governance & Standards (Coding conventions, Migration approvals, Architecture reviews)
+
+Cloud-Native & Distributed Architectures (Microservices, Eventual consistency, Outbox pattern)
+
+5. Microservices & System Design
+Monolith vs Microservices, Advantages/Disadvantages, Conway’s Law, Bounded Contexts
+
+Domain-Driven Design (DDD): Strategic vs Tactical, Entities, Value Objects, Ubiquitous Language
+
+Service Decomposition: Boundaries, Granularity, Database-per-service principle, Migration strategies
+
+Communication Patterns: Sync vs Async, APIs vs Messaging
+
+API Gateway & Backend-for-Frontend (BFF)
+
+Service Discovery (Client-side vs Server-side, Kubernetes)
+
+Messaging & Event-Driven Architecture (RabbitMQ, Kafka, Azure Service Bus, Queues vs Topics)
+
+Reliability Patterns: Idempotency, Dead-letter queues, Retry strategies, Outbox/Inbox patterns
+
+CQRS & Event Sourcing: Pros/cons, CRUD vs Event sourcing, When to use/avoid
+
+Distributed Transactions & Saga Pattern (Choreography vs Orchestration)
+
+Caching & Performance (In-memory vs Distributed, Redis, Invalidation strategies)
+
+Security (JWT, OAuth2, Centralized vs Decentralized auth)
+
+Observability & Monitoring (Logs, Metrics, Traces, Distributed tracing)
+
+System Design Methodology (Requirements, Capacity planning, Bottlenecks, Trade-offs)
+
+Large-Scale Systems (URL shortener, Notification, Chat, E-commerce, Payment, SaaS)
+
+Kubernetes & Cloud-Native (Pods, Deployments, Services, Autoscaling, Service Mesh)
+
+High Availability & Disaster Recovery (RTO, RPO, Fault tolerance)
+
+Production Operations & Incident Management (Monitoring, RCA, Postmortems)
+
+Cost Optimization & Governance (Cloud costs, Standards, Technology adoption)
+
+Architect Scenario Questions (E-commerce, Banking, SaaS, Chief Architect leadership)
+
+6. DevOps & Cloud Architecture
+CI/CD pipeline design
+
+Docker vs Kubernetes
+
+Azure App Service vs AKS
+
+Infrastructure as Code (Terraform, Bicep)
+
+Monitoring & Observability (OpenTelemetry, Application Insights, Grafana, Prometheus)
+
+Load Balancing & Scaling (Horizontal vs Vertical)
+
+Cost Optimization & Governance
+
+Disaster Recovery & Fault Tolerance
+
+Blue-Green & Canary deployments
+
+Architecture Governance & Leadership
+
+7. Security
+Authentication vs Authorization
+
+JWT, OAuth2, OpenID Connect
+
+CSRF, XSS, SQL Injection prevention
+
+HTTPS enforcement, HSTS, Security headers
+
+Secure secret storage (Azure Key Vault)
+
+Role-based & Policy-based authorization
+
+Identity Framework, MFA, Certificate authentication
+
+Encryption at rest & in transit
+
+8. Testing & Quality
+Unit Testing (Controllers, Services)
+
+Integration Testing APIs
+
+Mocking frameworks (Moq, NSubstitute)
+
+Test automation strategies
+
+Load & Performance Testing
+
+Postman/Newman collections
+
+API Contract Testing
+
+Continuous Testing in CI/CD
+
+9. Design Patterns & Architecture Principles
+SOLID Principles
+
+Repository & Unit of Work
+
+Factory, Builder, Singleton, Strategy, Observer, Mediator
+
+CQRS & Event Sourcing
+
+Clean Architecture
+
+Multi-Tenancy
+
+Microservices Patterns (Saga, Outbox, Circuit Breaker, Retry, Bulkhead)
+
+Enterprise Architecture Governance
+
+10. Soft Skills & Leadership
+Communication & Stakeholder Management
+
+Team Mentoring & Collaboration
+
+Handling Pressure & Deadlines
+
+Decision-Making & Trade-Offs
+
+Architecture Reviews & Governance
+
+Innovation vs Stability Balance
+
+Leadership scenarios in enterprise architecture

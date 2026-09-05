@@ -1,0 +1,450 @@
+# C# Advanced
+
+With **17 years of experience**, interviewers usually skip beginner syntax questions and focus on:
+
+- C# internals
+- .NET runtime architecture
+- Enterprise application design
+- Performance tuning
+- Distributed systems
+- Cloud architecture
+- Security
+- Design patterns
+- Domain-Driven Design (DDD)
+- Microservices
+- Event-driven systems
+- ASP.NET Core internals
+- EF Core internals
+- Azure/AWS architecture
+- DevOps
+- Leadership and architecture decisions
+
+Below is a curated **Top 300 C#/.NET Architect-Level Interview Questions** roadmap.
+
+# Section 1: CLR, Runtime & Internals (20)
+
+1. Explain CLR architecture.
+2. How does JIT compilation work?
+3. What are Tiered Compilations?
+4. RyuJIT vs Legacy JIT?
+5. What happens when a C# program starts?
+6. CLR Loader process?
+7. Assembly loading sequence?
+8. Strong-named assemblies?
+9. AssemblyLoadContext?
+10. Reflection loading issues?
+11. IL generation process?
+12. Metadata tables?
+13. How does the CLR execute methods?
+14. Method dispatch mechanisms?
+15. Virtual method table (VTable)?
+16. Runtime code generation?
+17. Native AOT benefits and limitations?
+18. ReadyToRun compilation?
+19. Runtime diagnostics tools?
+20. How do you analyze CLR crashes?
+
+---
+
+# Section 2: Memory Management & Performance (20)
+
+1. Stack vs Heap internals?
+2. GC architecture?
+3. GC generations?
+4. Workstation vs Server GC?
+5. Background GC?
+6. Sustained low latency GC?
+7. LOH internals?
+8. POH (Pinned Object Heap)?
+9. Memory fragmentation?
+10. Finalization queue?
+11. Dispose pattern?
+12. Memory leaks in managed code?
+13. WeakReference use cases?
+14. Span<T> internals?
+15. Memory<T> architecture?
+16. ArrayPool<T>?
+17. Object pooling strategies?
+18. High allocation troubleshooting?
+19. BenchmarkDotNet usage?
+20. Memory profiling techniques?
+
+---
+
+# Section 3: Advanced C# Language (20)
+
+1. Covariance and Contravariance?
+2. Generic constraints?
+3. Generic type specialization?
+4. Records internals?
+5. Required properties?
+6. Init-only setters?
+7. Pattern Matching evolution?
+8. Switch expressions internals?
+9. Expression Trees?
+10. Dynamic keyword internals?
+11. DLR architecture?
+12. Source Generators?
+13. Roslyn compiler architecture?
+14. Interceptors concepts?
+15. Ref structs?
+16. Unsafe code scenarios?
+17. Pointers in enterprise apps?
+18. Custom awaiters?
+19. ValueTask optimization?
+20. High-performance coding practices?
+
+---
+
+# Section 4: Multithreading & Concurrency (20)
+
+1. ThreadPool internals?
+2. Task Scheduler architecture?
+3. async/await state machine?
+4. ConfigureAwait(false)?
+5. Deadlock troubleshooting?
+6. Race conditions?
+7. Lock contention?
+8. SemaphoreSlim use cases?
+9. ReaderWriterLockSlim?
+10. Concurrent collections?
+11. Channels in .NET?
+12. Producer-consumer patterns?
+13. TPL internals?
+14. PLINQ optimization?
+15. CancellationToken architecture?
+16. SynchronizationContext?
+17. Async streams?
+18. High throughput processing?
+19. Thread starvation?
+20. Parallel system design?
+
+---
+
+# Section 5: ASP.NET Core Internals (20)
+
+1. Request pipeline internals?
+2. Middleware architecture?
+3. Endpoint routing internals?
+4. Model binding internals?
+5. Filters execution order?
+6. Authentication flow?
+7. Authorization policies?
+8. JWT architecture?
+9. OpenID Connect flow?
+10. OAuth2 grant types?
+11. API versioning strategy?
+12. Minimal APIs design?
+13. Kestrel internals?
+14. HTTP/2 support?
+15. HTTP/3 benefits?
+16. Rate limiting architecture?
+17. Response caching?
+18. Output caching?
+19. SignalR architecture?
+20. High-scale Web API design?
+
+---
+
+# Section 6: Entity Framework Core (20)
+
+1. EF Core architecture?
+2. Change Tracker internals?
+3. Query translation pipeline?
+4. Expression tree generation?
+5. Compiled queries?
+6. Tracking vs NoTracking?
+7. N+1 problem?
+8. Split queries?
+9. Global query filters?
+10. Interceptors?
+11. Value converters?
+12. Shadow properties?
+13. Concurrency handling?
+14. Transactions?
+15. Unit of Work pattern?
+16. Repository pattern pros/cons?
+17. EF performance tuning?
+18. Bulk operations?
+19. Multi-tenant EF architecture?
+20. EF Core pitfalls?
+
+---
+
+# Section 7: Design Patterns (20)
+
+1. SOLID principles?
+2. Strategy Pattern?
+3. Factory Pattern?
+4. Abstract Factory?
+5. Builder Pattern?
+6. Mediator Pattern?
+7. CQRS?
+8. Event Sourcing?
+9. Saga Pattern?
+10. Outbox Pattern?
+11. Decorator Pattern?
+12. Adapter Pattern?
+13. Observer Pattern?
+14. State Pattern?
+15. Command Pattern?
+16. Specification Pattern?
+17. Unit of Work?
+18. Repository?
+19. Anti-patterns?
+20. Real-world pattern selection?
+
+---
+
+# Section 8: Domain Driven Design (DDD) (15)
+
+1. DDD principles?
+2. Ubiquitous language?
+3. Bounded Context?
+4. Aggregate Root?
+5. Entity vs Value Object?
+6. Domain Events?
+7. Domain Services?
+8. Application Services?
+9. Anti-Corruption Layer?
+10. Context Mapping?
+11. Event Storming?
+12. Rich vs Anemic Domain Model?
+13. DDD in microservices?
+14. Aggregate consistency?
+15. DDD pitfalls?
+
+---
+
+# Section 9: Microservices Architecture (20)
+
+1. Why microservices?
+2. Monolith vs Microservices?
+3. Service boundaries?
+4. Database per service?
+5. Distributed transactions?
+6. Saga pattern?
+7. Choreography vs Orchestration?
+8. Service discovery?
+9. API Gateway?
+10. BFF pattern?
+11. Circuit Breaker?
+12. Retry strategies?
+13. Idempotency?
+14. Eventual consistency?
+15. Service Mesh?
+16. Sidecar pattern?
+17. Polyglot persistence?
+18. Resiliency patterns?
+19. Distributed tracing?
+20. Production challenges?
+
+---
+
+# Section 10: Messaging Systems (15)
+
+1. Message brokers comparison?
+2. RabbitMQ architecture?
+3. Kafka architecture?
+4. Azure Service Bus?
+5. Message ordering?
+6. Exactly-once delivery?
+7. Dead-letter queues?
+8. Retry handling?
+9. Event-driven architecture?
+10. Event contracts?
+11. Schema evolution?
+12. Message versioning?
+13. Event replay?
+14. Event sourcing storage?
+15. Distributed event processing?
+
+---
+
+# Section 11: System Design (20)
+
+1. Design a payment system.
+2. Design an order management system.
+3. Design Uber-like system.
+4. Design Netflix-like streaming.
+5. Design URL shortener.
+6. Design notification service.
+7. Design inventory platform.
+8. Design booking platform.
+9. Design audit logging system.
+10. Design fraud detection system.
+11. Design document management system.
+12. Design file upload service.
+13. Design real-time chat.
+14. Design search engine.
+15. Design API Gateway.
+16. Design caching layer.
+17. Design rate limiter.
+18. Design distributed cache.
+19. Design multi-region architecture.
+20. Design high-availability systems.
+
+---
+
+# Section 12: Cloud Architecture (20)
+
+1. Azure architecture principles?
+2. AWS architecture principles?
+3. Multi-cloud strategy?
+4. Azure Functions?
+5. Durable Functions?
+6. Kubernetes architecture?
+7. AKS/EKS?
+8. Container orchestration?
+9. Sidecars?
+10. Service Mesh?
+11. Autoscaling?
+12. Infrastructure as Code?
+13. Terraform architecture?
+14. Bicep?
+15. Secrets management?
+16. Distributed caching?
+17. Global load balancing?
+18. CDN architecture?
+19. Disaster recovery?
+20. Multi-region deployment?
+
+---
+
+# Section 13: Security (15)
+
+1. OWASP Top 10?
+2. SQL Injection prevention?
+3. XSS prevention?
+4. CSRF mitigation?
+5. JWT vulnerabilities?
+6. OAuth2 security?
+7. OpenID Connect?
+8. API security?
+9. Certificate management?
+10. Encryption at rest?
+11. Encryption in transit?
+12. Key Vault usage?
+13. Secrets rotation?
+14. Zero Trust Architecture?
+15. Security architecture review?
+
+---
+
+# Section 14: DevOps & Observability (15)
+
+1. CI/CD pipeline design?
+2. Blue-Green deployment?
+3. Canary release?
+4. Feature flags?
+5. GitOps?
+6. Container security?
+7. Logging architecture?
+8. OpenTelemetry?
+9. Distributed tracing?
+10. Metrics strategy?
+11. SLI/SLO/SLA?
+12. Prometheus?
+13. Grafana?
+14. Incident management?
+15. Root cause analysis?
+
+---
+
+# Section 15: Architecture & Leadership (40)
+
+1. What makes a good software architect?
+2. Architecture decision records?
+3. Technical debt management?
+4. Legacy modernization?
+5. Strangler Fig Pattern?
+6. Build vs Buy decisions?
+7. Architectural trade-offs?
+8. CAP theorem?
+9. PACELC theorem?
+10. Scalability strategies?
+11. Availability vs consistency?
+12. Horizontal scaling?
+13. Vertical scaling?
+14. Caching strategies?
+15. Read replicas?
+16. Database sharding?
+17. Multi-tenancy models?
+18. Eventual consistency?
+19. Data governance?
+20. Architecture reviews?
+21. Technical roadmap planning?
+22. Engineering governance?
+23. Team topology?
+24. Conway's Law?
+25. Stakeholder management?
+26. Managing architecture risks?
+27. Architecture KPIs?
+28. Cost optimization?
+29. Cloud FinOps?
+30. High-performance architecture?
+31. Enterprise integration patterns?
+32. Regulatory compliance architecture?
+33. PCI-DSS considerations?
+34. HIPAA considerations?
+35. GDPR architecture?
+36. AI integration architecture?
+37. Platform engineering?
+38. Enterprise architecture frameworks?
+39. How would you modernize a 20-year-old .NET application?
+40. Describe the most complex architecture you have designed and defend every decision.
+
+# Top 50 "Must Master" Questions for a 17-Year Architect
+
+If you have limited preparation time, prioritize:
+
+- CLR internals
+- GC internals
+- async/await state machine
+- ThreadPool internals
+- ASP.NET Core request pipeline
+- Dependency Injection internals
+- EF Core query pipeline
+- Repository Pattern pros/cons
+- Unit of Work
+- DDD Aggregates
+- CQRS
+- Event Sourcing
+- Saga Pattern
+- Outbox Pattern
+- Microservice boundaries
+- Distributed transactions
+- Kafka vs RabbitMQ
+- CAP theorem
+- PACELC theorem
+- Caching strategies
+- Database sharding
+- Multi-tenancy
+- OAuth2/OIDC
+- JWT security
+- Kubernetes architecture
+- API Gateway
+- Service Mesh
+- OpenTelemetry
+- Distributed tracing
+- Blue-Green deployment
+- Canary deployment
+- Terraform
+- Azure architecture
+- Disaster recovery
+- Scalability design
+- Availability design
+- Eventual consistency
+- Technical debt strategy
+- Legacy modernization
+- Strangler Pattern
+- High-scale API design
+- Payment system design
+- Order management design
+- Real-time architecture
+- Architecture trade-offs
+- Cost optimization
+- Leadership scenarios
+- Stakeholder management
+- Architecture governance
+- System design whiteboard discussions

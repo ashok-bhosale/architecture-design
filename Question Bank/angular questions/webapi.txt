@@ -1,0 +1,351 @@
+If you're preparing for senior .NET Web API interviews (15+ years experience, Lead/Architect level), here is a structured list of **300 ASP.NET Core Web API interview questions** grouped by topic.
+
+# 1. Web API Fundamentals (1–25)
+
+1. What is ASP.NET Core Web API?
+2. Difference between MVC and Web API?
+3. What is REST?
+4. REST constraints?
+5. What are HTTP verbs?
+6. Difference between PUT and PATCH?
+7. Difference between PUT and POST?
+8. What is idempotency?
+9. What is statelessness?
+10. What are RESTful services?
+11. What is content negotiation?
+12. What is HTTP status code?
+13. Common HTTP status codes?
+14. What is URI?
+15. What is endpoint routing?
+16. What is middleware?
+17. Request lifecycle in ASP.NET Core?
+18. What is Kestrel?
+19. What is IIS Integration?
+20. What is Startup.cs?
+21. What is Program.cs?
+22. Difference between .NET Framework and .NET Core?
+23. What is Minimal API?
+24. Advantages of Minimal APIs?
+25. When should you use Web API?
+
+# 2. Controllers & Routing (26–50)
+
+26. What is API Controller?
+27. What is `[ApiController]`?
+28. What is attribute routing?
+29. What is conventional routing?
+30. Route constraints?
+31. Optional parameters in routes?
+32. Route tokens?
+33. Difference between route and query parameters?
+34. What is action method?
+35. What is IActionResult?
+36. What is ActionResult<T>?
+37. Difference between Ok() and StatusCode()?
+38. CreatedAtAction() usage?
+39. CreatedAtRoute() usage?
+40. BadRequest() usage?
+41. NotFound() usage?
+42. Unauthorized() usage?
+43. Forbid() usage?
+44. What is endpoint metadata?
+45. What is route template?
+46. What is custom route?
+47. Versioned routes?
+48. Nested routes?
+49. Route debugging?
+50. Best routing practices?
+
+# 3. Dependency Injection (51–75)
+
+51. What is DI?
+52. Benefits of DI?
+53. Constructor injection?
+54. Method injection?
+55. Property injection?
+56. Service lifetime?
+57. Singleton lifetime?
+58. Scoped lifetime?
+59. Transient lifetime?
+60. When to use Singleton?
+61. When to use Scoped?
+62. Service provider?
+63. Service collection?
+64. Open generic registration?
+65. Multiple implementations?
+66. Factory pattern with DI?
+67. Service Locator anti-pattern?
+68. Circular dependency?
+69. Lazy injection?
+70. Options pattern?
+71. IOptions?
+72. IOptionsSnapshot?
+73. IOptionsMonitor?
+74. Validate configuration?
+75. Custom DI container?
+
+# 4. Model Binding & Validation (76–100)
+
+76. What is model binding?
+77. Binding sources?
+78. FromBody?
+79. FromQuery?
+80. FromRoute?
+81. FromHeader?
+82. FromForm?
+83. Model validation?
+84. Data annotations?
+85. Required attribute?
+86. StringLength attribute?
+87. Range attribute?
+88. Custom validation?
+89. Validation filter?
+90. FluentValidation?
+91. ModelState?
+92. Automatic validation?
+93. DTOs?
+94. Why DTOs?
+95. Mapping DTOs?
+96. AutoMapper?
+97. Manual mapping?
+98. Validation pipeline?
+99. Request validation?
+100. Response validation?
+
+# 5. Middleware (101–125)
+
+101. What is middleware?
+102. Middleware execution order?
+103. Use() vs Run()?
+104. Map() middleware?
+105. Custom middleware?
+106. Exception middleware?
+107. Logging middleware?
+108. Authentication middleware?
+109. Authorization middleware?
+110. CORS middleware?
+111. Rate limiting middleware?
+112. Static file middleware?
+113. HTTPS redirection?
+114. Forwarded headers?
+115. Compression middleware?
+116. Request buffering?
+117. Response caching?
+118. Correlation ID?
+119. Middleware short-circuiting?
+120. Pipeline branching?
+121. Custom headers?
+122. Middleware vs Filters?
+123. Global middleware?
+124. Middleware performance?
+125. Middleware best practices?
+
+# 6. Filters (126–145)
+
+126. What are filters?
+127. Authorization filter?
+128. Action filter?
+129. Result filter?
+130. Exception filter?
+131. Resource filter?
+132. Filter pipeline?
+133. Global filters?
+134. Controller filters?
+135. Action filters?
+136. Async filters?
+137. Custom filters?
+138. Logging filter?
+139. Validation filter?
+140. Audit filter?
+141. Dependency injection in filters?
+142. Filter order?
+143. Filter vs middleware?
+144. Filter scope?
+145. Best practices?
+
+# 7. Authentication & Authorization (146–185)
+
+146. Authentication vs Authorization?
+147. JWT?
+148. JWT structure?
+149. Claims?
+150. Roles?
+151. Policy-based authorization?
+152. JWT validation?
+153. Refresh token?
+154. Access token?
+155. OAuth2?
+156. OpenID Connect?
+157. IdentityServer?
+158. Azure AD authentication?
+159. Microsoft Entra ID?
+160. Cookie authentication?
+161. API Key authentication?
+162. Certificate authentication?
+163. Claims transformation?
+164. Custom authorization handler?
+165. Requirement-based authorization?
+166. Role-based authorization?
+167. Anonymous access?
+168. Multiple authentication schemes?
+169. Token expiration?
+170. Secure token storage?
+171. Replay attacks?
+172. CSRF?
+173. XSS?
+174. Security headers?
+175. HSTS?
+176. HTTPS enforcement?
+177. Secret management?
+178. Azure Key Vault?
+179. Authentication middleware?
+180. Authorization middleware?
+181. Zero trust architecture?
+182. Identity management?
+183. SSO?
+184. MFA?
+185. Security best practices?
+
+# 8. Entity Framework Core (186–225)
+
+186. What is EF Core?
+187. DbContext?
+188. DbSet?
+189. Change Tracking?
+190. Tracking vs NoTracking?
+191. Migrations?
+192. Code First?
+193. Database First?
+194. Scaffold command?
+195. Relationships?
+196. One-to-One?
+197. One-to-Many?
+198. Many-to-Many?
+199. Cascade delete?
+200. Lazy loading?
+201. Eager loading?
+202. Explicit loading?
+203. Include()?
+204. ThenInclude()?
+205. LINQ queries?
+206. IQueryable vs IEnumerable?
+207. Compiled queries?
+208. Transactions?
+209. Concurrency handling?
+210. RowVersion?
+211. Optimistic concurrency?
+212. Stored procedures?
+213. Raw SQL?
+214. Connection pooling?
+215. Bulk operations?
+216. Performance tuning?
+217. Split queries?
+218. Query filters?
+219. Shadow properties?
+220. Value converters?
+221. Interceptors?
+222. Unit of Work?
+223. Repository pattern?
+224. EF Core limitations?
+225. Best practices?
+
+# 9. Logging & Monitoring (226–245)
+
+226. ILogger?
+227. Logging providers?
+228. Structured logging?
+229. Serilog?
+230. NLog?
+231. Application Insights?
+232. OpenTelemetry?
+233. Distributed tracing?
+234. Correlation IDs?
+235. Request logging?
+236. Exception logging?
+237. Health checks?
+238. Metrics?
+239. Monitoring APIs?
+240. Azure Monitor?
+241. Log levels?
+242. Centralized logging?
+243. ELK Stack?
+244. Splunk?
+245. Observability?
+
+# 10. Performance & Scalability (246–275)
+
+246. API performance optimization?
+247. Response caching?
+248. Distributed caching?
+249. Redis?
+250. Memory cache?
+251. Output caching?
+252. Compression?
+253. Async programming?
+254. Task vs Thread?
+255. ConfigureAwait?
+256. Connection pooling?
+257. Load balancing?
+258. Horizontal scaling?
+259. Vertical scaling?
+260. API throttling?
+261. Rate limiting?
+262. Bulkhead pattern?
+263. Circuit breaker?
+264. Retry pattern?
+265. Queue-based load leveling?
+266. API Gateway?
+267. CDN?
+268. Database optimization?
+269. Query optimization?
+270. Pagination?
+271. Cursor pagination?
+272. Streaming responses?
+273. gRPC?
+274. HTTP/2?
+275. HTTP/3?
+
+# 11. Microservices & Architecture (276–300)
+
+276. Monolith vs Microservices?
+277. API Gateway?
+278. Service Discovery?
+279. DDD?
+280. Bounded Context?
+281. CQRS?
+282. MediatR?
+283. Event Sourcing?
+284. Saga Pattern?
+285. Outbox Pattern?
+286. Event-driven architecture?
+287. Message Broker?
+288. RabbitMQ?
+289. Azure Service Bus?
+290. Kafka?
+291. Distributed transactions?
+292. Eventual consistency?
+293. Resilience patterns?
+294. Clean Architecture?
+295. Hexagonal Architecture?
+296. Onion Architecture?
+297. Vertical Slice Architecture?
+298. API versioning strategies?
+299. Designing enterprise APIs?
+300. How would you design a scalable Web API handling 1 million requests/day?
+
+For a **15+ years Full Stack .NET Architect interview**, focus heavily on:
+
+* Authentication & Security
+* EF Core Performance
+* Azure Integration
+* Microservices
+* Distributed Systems
+* Clean Architecture
+* API Gateway
+* Caching
+* Resiliency Patterns
+* Observability
+* Kubernetes & Containers
+* AI Integration with APIs
+
+These topics typically account for 70–80% of architect-level Web API interviews in 2026.

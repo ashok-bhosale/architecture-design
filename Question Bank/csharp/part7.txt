@@ -1,0 +1,90 @@
+Nice work, Alex — that infographic you uploaded is packed with interview prep material. I can extract all the questions from it for you.
+Here’s a clean, structured list of the questions grouped by section:
+
+⚙️ ASP.NET Core & Backend
+	• Middleware vs Filters vs Endpoint Filters
+	• How would you implement centralized exception handling
+	• JWT vs Cookies Authentication
+	• How do you assign/maintain proper roles
+	• How would you optimize API performance
+	• How would you design scalable APIs in .NET applications
+	• What is Dependency Injection in ASP.NET Core
+	• What is IHostedService and when to use it
+	• How does Caching improve performance
+
+💻 Angular / React Frontend
+	• Angular vs React — when should you choose each
+	• What causes unnecessary re-renders
+	• How would you implement lazy loading
+	• State Management — when is it needed
+	• How would you improve frontend performance
+	• How would you structure large frontend architecture
+	• What is the difference between Observables and Promises
+	• How would you handle route guards / protected routes
+
+🗄️ SQL Server & Database
+	• Clustered vs Non-Clustered Index
+	• How would you optimize slow queries
+	• What SELECTs cause performance issues
+	• CTE vs Temp Tables
+	• How would you design scalable DB architecture
+	• How would you handle large data migrations
+	• Normalization vs Denormalization
+	• How would you handle massive table partitions
+	• Stored Procedure vs Function — differences
+
+☁️ Cloud, DevOps & Architecture
+	• Azure App Service vs AKS — when to use which
+	• Docker vs Kubernetes
+	• How would you implement CI/CD pipelines
+	• How would you monitor distributed applications
+	• How would you handle service-to-service communication
+	• How would you ensure high availability and disaster recovery
+
+🔍 Real-Time Scenario Questions
+	• API response time suddenly increased — what would you do
+	• Application traffic increased 10x overnight — what would you do
+	• Frontend became slow after deployment — what would you do
+	• One SQL query blocks multiple queries — what would you do
+	• One microservice keeps failing repeatedly — what would you do
+	• Need to deploy without downtime — what would you do
+
+🧩 Design & Architecture
+	• How would you design a scalable e-commerce application
+	• How would you separate microservices
+	• What is Clean Architecture
+	• CQRS vs Traditional Architecture
+	• How would you design multi-tenant applications
+	• How would you handle distributed transactions
+
+🔐 Security
+	• How would you secure APIs
+	• How does OAuth 2.0 / OpenID Connect work
+	• How would you prevent SQL Injection
+	• How would you store secrets and configuration
+	• How would you implement security headers
+
+🧪 Testing
+	• Unit Test vs Integration Test
+	• How would you test Web APIs
+	• How would you use mocks/stubs
+	• What tools do you use for testing
+
+🧠 OOPS & .NET Concepts
+	• Abstraction vs Interface
+	• What is Dependency Injection
+	• What is IEnumerable vs IQueryable
+	• Value Type vs Reference Type
+	• Garbage Collection in .NET
+
+💬 Soft Skills
+	• Tell me about yourself
+	• Why do you want to join Accenture
+	• How do you handle pressure
+	• Describe a challenging situation
+	• How do you work in a team
+
+Would you like me to turn these into a practice question bank with model answers and explanations for each section? That would make your interview prep far more effective.
+
+From <edge://discover-chat-v2/> 
+

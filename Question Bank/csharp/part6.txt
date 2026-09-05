@@ -1,0 +1,389 @@
+Microservices & System Design Interview Questions – Part 1 (Questions 1–50)
+Microservices Fundamentals, DDD, Service Communication, API Gateway & Service Discovery
+These questions are designed for Senior .NET Developers, Technical Leads, Solution Architects, and Cloud Architects.
+
+Section 1: Microservices Fundamentals (1–15)
+	1. What are microservices?
+	2. How do microservices differ from monolithic architectures?
+	3. What business problems do microservices solve?
+	4. What are the advantages of microservices?
+	5. What are the disadvantages of microservices?
+	6. When should you avoid microservices?
+	7. What characteristics define a well-designed microservice?
+	8. What is independent deployability?
+	9. Why is decentralized data management important in microservices?
+	10. What are the operational challenges of microservices?
+	11. What organizational factors influence microservice adoption?
+	12. What is Conway's Law?
+	13. How does Conway's Law affect architecture decisions?
+	14. What are bounded contexts?
+	15. Why should each microservice own its data?
+
+Section 2: Domain-Driven Design (DDD) (16–25)
+	16. What is Domain-Driven Design (DDD)?
+	17. What is the difference between strategic and tactical DDD?
+	18. What is a domain?
+	19. What is a subdomain?
+	20. What are core, supporting, and generic subdomains?
+	21. What is a bounded context?
+	22. How do bounded contexts help in microservice design?
+	23. What is the ubiquitous language?
+	24. What are entities in DDD?
+	25. What are value objects in DDD?
+
+Section 3: Service Decomposition (26–35)
+	26. How do you identify microservice boundaries?
+	27. What are the dangers of decomposing services too early?
+	28. What are the risks of overly large microservices?
+	29. What are the risks of overly small microservices?
+	30. How would you decompose an e-commerce platform into services?
+	31. What factors determine service granularity?
+	32. What is the "database-per-service" pattern?
+	33. Why should microservices avoid sharing databases?
+	34. When might a shared database be temporarily acceptable?
+	35. How do you migrate from a monolith to microservices?
+
+Section 4: Communication Patterns (36–42)
+	36. What communication styles exist in microservices?
+	37. What is synchronous communication?
+	38. What is asynchronous communication?
+	39. What are the advantages of synchronous communication?
+	40. What are the disadvantages of synchronous communication?
+	41. What are the advantages of asynchronous communication?
+	42. What are the disadvantages of asynchronous communication?
+
+Section 5: API Design and Gateways (43–46)
+	43. What is an API Gateway?
+	44. What responsibilities should an API Gateway have?
+	45. What responsibilities should an API Gateway avoid?
+	46. When would Backend-for-Frontend (BFF) patterns be useful?
+
+Section 6: Service Discovery (47–50)
+	47. What is service discovery?
+	48. What is the difference between client-side and server-side service discovery?
+	49. How does service discovery work in Kubernetes?
+	50. What considerations influence your choice of service discovery mechanism?
+
+Architect Scenario Discussions
+Scenario 1: Monolith to Microservices
+	Your company has a 10-year-old monolithic application.
+	• How would you decide whether migration to microservices is justified?
+	• What migration strategy would you choose?
+	• How would you minimize business disruption?
+
+Scenario 2: Service Boundaries
+	The Order and Payment services frequently change together.
+	• Should they remain separate?
+	• How would you evaluate whether the current boundaries are appropriate?
+
+Scenario 3: Communication Choices
+	An Inventory service must notify multiple downstream systems whenever stock levels change.
+	• Would you use synchronous APIs or asynchronous messaging?
+	• What trade-offs would you consider?
+
+Key Architect Principles
+Service Design
+	• Design services around business capabilities.
+	• Avoid technical-layer decomposition.
+	• Favor cohesion within services.
+Communication
+	• Use synchronous communication when immediate responses are required.
+	• Use asynchronous messaging to improve decoupling and resilience.
+	• Be aware of the operational complexity introduced by messaging systems.
+Data Ownership
+	• Each service should own its data.
+	• Shared databases create coupling and hinder independent evolution.
+	• Temporary compromises should have a clear migration strategy.
+Organizational Alignment
+	• Architecture should reflect team structures and business domains.
+	• Microservices are as much an organizational decision as a technical one.
+
+Part 1 Coverage
+✅ Microservices Fundamentals
+✅ Advantages and Trade-offs
+✅ Conway's Law
+✅ Domain-Driven Design (DDD)
+✅ Bounded Contexts
+✅ Service Decomposition
+✅ Database-per-Service Principle
+✅ Monolith Decomposition Strategies
+✅ Synchronous vs Asynchronous Communication
+✅ API Gateway Concepts
+✅ Backend-for-Frontend (BFF)
+✅ Service Discovery
+
+
+Microservices & System Design Interview Questions – Part 2 (Questions 51–100)
+Messaging, Event-Driven Architecture, CQRS, Resilience, Security, Observability & Scalability
+These questions target Senior Engineers, Solution Architects, and Cloud Architects responsible for designing distributed systems.
+
+Section 7: Messaging and Event-Driven Architecture (51–65)
+	1. What is event-driven architecture?
+	2. How does event-driven architecture differ from request-response systems?
+	3. What is a message broker?
+	4. What problems do message brokers solve?
+	5. What is the difference between a queue and a topic?
+	6. What is RabbitMQ?
+	7. When would you choose RabbitMQ?
+	8. What is Kafka?
+	9. When would you choose Kafka?
+	10. What is Azure Service Bus?
+	11. When would Azure Service Bus be preferable?
+	12. What is message durability?
+	13. What is at-least-once delivery?
+	14. What is at-most-once delivery?
+	15. What is exactly-once delivery, and why is it challenging?
+
+Section 8: Reliability and Messaging Patterns (66–75)
+	1. What is idempotency?
+	2. Why is idempotency important in distributed systems?
+	3. What is a dead-letter queue (DLQ)?
+	4. When should messages be moved to a DLQ?
+	5. What is message retry logic?
+	6. What risks are associated with aggressive retry strategies?
+	7. What is the Outbox Pattern?
+	8. What problem does the Outbox Pattern solve?
+	9. What is the Inbox Pattern?
+	10. How do Outbox and Inbox patterns improve reliability?
+
+Section 9: CQRS and Event Sourcing (76–85)
+	1. What is CQRS (Command Query Responsibility Segregation)?
+	2. What problems does CQRS address?
+	3. What are the trade-offs of CQRS?
+	4. When should CQRS be avoided?
+	5. What is Event Sourcing?
+	6. How does Event Sourcing differ from traditional CRUD?
+	7. What are the advantages of Event Sourcing?
+	8. What are the disadvantages of Event Sourcing?
+	9. Can CQRS exist without Event Sourcing?
+	10. Can Event Sourcing exist without CQRS?
+
+Section 10: Distributed Transactions and Sagas (86–90)
+	1. Why are distributed transactions difficult in microservices?
+	2. What is eventual consistency?
+	3. What is the Saga Pattern?
+	4. What is the difference between choreography and orchestration sagas?
+	5. How would you decide between choreography and orchestration?
+
+Section 11: Caching and Performance (91–95)
+	1. What is caching?
+	2. What is the difference between in-memory caching and distributed caching?
+	3. When should Redis be used?
+	4. How do you maintain cache consistency?
+	5. What cache invalidation strategies are commonly used?
+
+Section 12: Security in Microservices (96–98)
+	1. How should authentication be handled in microservices?
+	2. What is the role of JWT tokens in distributed systems?
+	3. How would you implement authorization across multiple services?
+
+Section 13: Observability and Monitoring (99–100)
+	1. What are the three pillars of observability?
+	2. Why is distributed tracing important in microservices?
+
+Architect Scenario Discussions
+Scenario 1: Order Processing Workflow
+	An order placement process involves Inventory, Payment, Shipping, and Notification services.
+	• How would you maintain consistency without distributed transactions?
+	• Would you use orchestration or choreography?
+	• How would you handle compensating actions?
+
+Scenario 2: Messaging Platform Selection
+	A company needs to process millions of events daily while preserving ordering guarantees.
+	• Would you choose RabbitMQ, Kafka, or Azure Service Bus?
+	• What trade-offs would influence your decision?
+
+Scenario 3: Cache Design
+	Product catalog data is read thousands of times per minute but changes infrequently.
+	• Would you introduce caching?
+	• How would you invalidate stale data?
+	• What monitoring would you implement?
+
+Scenario 4: Security
+	Multiple microservices expose APIs consumed by web and mobile applications.
+	• Where should authentication occur?
+	• How would authorization decisions be enforced consistently?
+	• Would you centralize or decentralize security policies?
+
+Key Architect Principles
+Messaging
+	• Prefer asynchronous communication when decoupling is important.
+	• Design consumers to be idempotent.
+	• Expect duplicate message delivery.
+Reliability
+	• Retries should be deliberate and bounded.
+	• Dead-letter queues are essential for operational visibility.
+	• Distributed systems fail in unexpected ways; plan accordingly.
+CQRS and Event Sourcing
+	• Introduce these patterns to solve specific problems.
+	• Avoid adopting them solely because they are fashionable.
+	• Understand the operational complexity they add.
+Caching
+	• Cache invalidation remains one of the hardest problems in software engineering.
+	• Measure performance gains against consistency requirements.
+	• Use distributed caches when multiple application instances are involved.
+Security
+	• Authentication and authorization should be designed early.
+	• Avoid duplicating security logic inconsistently across services.
+	• Protect service-to-service communication.
+Observability
+	• Logs explain what happened.
+	• Metrics indicate when something is wrong.
+	• Traces reveal how requests flow across services.
+
+Part 2 Coverage
+✅ Event-Driven Architecture
+✅ RabbitMQ, Kafka, Azure Service Bus
+✅ Delivery Guarantees
+✅ Idempotency
+✅ Dead-Letter Queues
+✅ Retry Strategies
+✅ Outbox and Inbox Patterns
+✅ CQRS
+✅ Event Sourcing
+✅ Distributed Transactions
+✅ Saga Pattern
+✅ Caching Strategies
+✅ JWT-Based Security
+✅ Observability Fundamentals
+
+
+Microservices & System Design Interview Questions – Part 3 (Questions 101–150)
+Cloud-Native Architecture, Production Readiness, Governance & Architect Scenarios
+These questions represent the type of discussions expected in Solution Architect, Principal Engineer, and Cloud Architect interviews.
+
+Section 14: System Design Methodology (101–110)
+	1. How do you approach a system design interview? 
+	2. What functional requirements should be clarified before designing a system? 
+	3. What non-functional requirements should be identified? 
+	4. How do you estimate system capacity? 
+	5. How do you estimate requests per second (RPS)? 
+	6. How do you determine storage requirements? 
+	7. How do you identify bottlenecks in a proposed design? 
+	8. How do you prioritize scalability, availability, consistency, and cost? 
+	9. What trade-offs are commonly encountered in distributed systems? 
+	10. How do you document architectural decisions? 
+
+Section 15: Designing Large-Scale Systems (111–120)
+	1. How would you design a URL shortening service? 
+	2. How would you design a notification platform? 
+	3. How would you design a chat application? 
+	4. How would you design an e-commerce platform? 
+	5. How would you design an order management system? 
+	6. How would you design a payment processing system? 
+	7. How would you design a document management platform? 
+	8. How would you design a learning management system (LMS)? 
+	9. How would you design a multi-tenant SaaS application? 
+	10. How would you design an API serving millions of users daily? 
+
+Section 16: Kubernetes and Cloud-Native Considerations (121–130)
+	1. Why are containers valuable in microservices architectures? 
+	2. What problems does Kubernetes solve? 
+	3. What is a Kubernetes Pod? 
+	4. What is a Deployment? 
+	5. What is a Service in Kubernetes? 
+	6. What is Horizontal Pod Autoscaling (HPA)? 
+	7. How do readiness and liveness probes differ? 
+	8. How would you design a rolling deployment strategy? 
+	9. What is a service mesh, and when would it be useful? 
+	10. What operational challenges does Kubernetes introduce? 
+
+Section 17: High Availability and Disaster Recovery (131–136)
+	1. What is high availability? 
+	2. How is high availability different from disaster recovery? 
+	3. What is a single point of failure? 
+	4. What are Recovery Time Objective (RTO) and Recovery Point Objective (RPO)? 
+	5. How would you design for fault tolerance? 
+	6. What strategies improve resilience in cloud-native applications? 
+
+Section 18: Production Operations and Incident Management (137–142)
+	1. How do you prepare microservices for production? 
+	2. What metrics should be monitored across services? 
+	3. How would you investigate a production outage affecting multiple services? 
+	4. How do you conduct a root cause analysis (RCA)? 
+	5. What information should be included in a postmortem report? 
+	6. How do you prevent recurring incidents? 
+
+Section 19: Cost Optimization and Governance (143–146)
+	1. How do you balance scalability with cost efficiency? 
+	2. What architectural choices can unnecessarily increase cloud costs? 
+	3. How would you establish governance standards across multiple teams? 
+	4. How do you evaluate whether a new technology is worth adopting? 
+
+Section 20: Architect Scenario Questions (147–150)
+147. E-Commerce Platform Scenario
+	You are designing an Amazon-like marketplace expected to handle 10 million users.
+	• How would you decompose the system into services? 
+	• Which components require asynchronous communication? 
+	• Where would caching be introduced? 
+	• How would you address observability and resilience? 
+
+148. Banking System Scenario
+	A digital banking platform must process financial transactions with strict audit requirements.
+	• How would you design for consistency and reliability? 
+	• Where would eventual consistency be acceptable or unacceptable? 
+	• How would you approach disaster recovery planning? 
+
+149. SaaS Platform Scenario
+	A B2B SaaS platform serves 20,000 customers with varying compliance requirements.
+	• What multi-tenancy strategy would you adopt? 
+	• How would you isolate premium enterprise customers? 
+	• How would you handle tenant-specific customization without excessive complexity? 
+
+150. Chief Architect Scenario
+	You are responsible for 30 development teams building microservices independently.
+	• What architectural standards would you mandate? 
+	• How would you balance team autonomy with consistency? 
+	• What review processes would you establish? 
+	• How would you encourage innovation without creating fragmentation? 
+
+Key Architect Principles
+System Design
+	• Begin with requirements, not technology choices. 
+	• Quantify scale before proposing solutions. 
+	• Design incrementally and validate assumptions. 
+Cloud-Native Thinking
+	• Assume failures will occur. 
+	• Design for elasticity and automation. 
+	• Embrace observability as a first-class concern. 
+Reliability
+	• Eliminate single points of failure. 
+	• Define RTO and RPO based on business needs. 
+	• Build recovery mechanisms before incidents happen. 
+Governance
+	• Standards should enable teams rather than restrict them unnecessarily. 
+	• Document architectural decisions. 
+	• Revisit standards periodically as the organization evolves. 
+Leadership
+	• Architects guide trade-offs rather than dictate technologies. 
+	• Communication is as important as technical expertise. 
+	• Success is measured by the effectiveness of the systems and teams you enable. 
+
+Complete Microservices & System Design Interview Bank Summary
+Part 1 (Questions 1–50)
+	• Microservices Fundamentals 
+	• Domain-Driven Design (DDD) 
+	• Service Boundaries 
+	• API Gateway 
+	• Service Discovery 
+	• Communication Patterns 
+Part 2 (Questions 51–100)
+	• Event-Driven Architecture 
+	• RabbitMQ, Kafka, Azure Service Bus 
+	• Reliability Patterns 
+	• CQRS and Event Sourcing 
+	• Saga Pattern 
+	• Caching 
+	• Security 
+	• Observability 
+Part 3 (Questions 101–150)
+	• System Design Methodology 
+	• Large-Scale System Design 
+	• Kubernetes and Cloud-Native Principles 
+	• High Availability and Disaster Recovery 
+	• Incident Management 
+	• Cost Optimization 
+	• Architecture Governance 
+	• Executive-Level Scenario Questions 
+
+

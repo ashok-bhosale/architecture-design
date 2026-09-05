@@ -1,0 +1,429 @@
+C# Interview Questions (Basic to Architect) – Part 1 (Questions 1–100)
+Section 1: C# Fundamentals (1–25)
+	1. What is C#? 
+	2. What are the key features of C#? 
+	3. What is the Common Language Runtime (CLR)? 
+	4. What is the .NET platform? 
+	5. Difference between .NET Framework, .NET Core, and modern .NET? 
+	6. What is managed code? 
+	7. What is unmanaged code? 
+	8. What is Common Type System (CTS)? 
+	9. What is Common Language Specification (CLS)? 
+	10. What is Intermediate Language (IL)? 
+	11. What is Just-In-Time (JIT) compilation? 
+	12. What are namespaces in C#? 
+	13. What is the purpose of the using statement? 
+	14. What are identifiers? 
+	15. What are keywords in C#? 
+	16. What are value types? 
+	17. What are reference types? 
+	18. Difference between stack and heap memory? 
+	19. What is boxing? 
+	20. What is unboxing? 
+	21. What is type casting? 
+	22. Difference between implicit and explicit conversion? 
+	23. What is nullable type? 
+	24. What is the null-coalescing operator (??)? 
+	25. What is the null-conditional operator (?.)? 
+
+Section 2: Variables, Constants, and Operators (26–40)
+	26. What are variables in C#? 
+	27. Difference between const and readonly? 
+	28. What is static readonly? 
+	29. What are literals? 
+	30. What are arithmetic operators? 
+	31. What are relational operators? 
+	32. What are logical operators? 
+	33. What are bitwise operators? 
+	34. What are assignment operators? 
+	35. What is the ternary operator? 
+	36. Difference between == and Equals()? 
+	37. Difference between == and ReferenceEquals()? 
+	38. What is operator overloading? 
+	39. Can all operators be overloaded? 
+	40. What are checked and unchecked contexts? 
+
+Section 3: Control Statements (41–50)
+	41. Explain the if statement. 
+	42. Explain the switch statement. 
+	43. What is pattern matching in switch? 
+	44. Difference between for and foreach? 
+	45. When should you use while? 
+	46. What is a do-while loop? 
+	47. What are break and continue? 
+	48. What is goto? 
+	49. What are yield statements? 
+	50. What is iterator execution? 
+
+Section 4: Methods (51–65)
+	51. What is a method? 
+	52. What are method parameters? 
+	53. Difference between value and reference parameters? 
+	54. What is the ref keyword? 
+	55. What is the out keyword? 
+	56. What is the in keyword? 
+	57. What are optional parameters? 
+	58. What are named parameters? 
+	59. What is method overloading? 
+	60. What is method overriding? 
+	61. What is recursion? 
+	62. What are extension methods? 
+	63. How are extension methods implemented? 
+	64. What is local function? 
+	65. What are expression-bodied members? 
+
+Section 5: Object-Oriented Programming (66–85)
+	66. What are the four pillars of OOP? 
+	67. Explain encapsulation. 
+	68. Explain inheritance. 
+	69. Explain polymorphism. 
+	70. Explain abstraction. 
+	71. What is a class? 
+	72. What is an object? 
+	73. What is a constructor? 
+	74. What are different types of constructors? 
+	75. What is constructor chaining? 
+	76. What is a destructor? 
+	77. What is a static constructor? 
+	78. What are access modifiers? 
+	79. Difference between private, protected, and public? 
+	80. What is internal access modifier? 
+	81. What is protected internal? 
+	82. What is private protected? 
+	83. What is the this keyword? 
+	84. What is the base keyword? 
+	85. What is object initialization syntax? 
+
+Section 6: Interfaces and Abstract Classes (86–95)
+	86. What is an interface? 
+	87. What is an abstract class? 
+	88. Difference between interface and abstract class? 
+	89. Can interfaces have implementations? 
+	90. What are default interface methods? 
+	91. Can abstract classes have constructors? 
+	92. What is multiple inheritance? 
+	93. How does C# support multiple inheritance? 
+	94. What is explicit interface implementation? 
+	95. When should you choose an interface over an abstract class? 
+
+Section 7: Arrays and Collections (96–100)
+	96. What is an array? 
+	97. Difference between single-dimensional and multidimensional arrays? 
+	98. What is a jagged array? 
+	99. Difference between Array and ArrayList? 
+	100. Difference between List<T> and arrays? 
+
+Topics Covered in Part 1
+✅ C# Fundamentals
+✅ CLR and .NET Basics
+✅ Value Types vs Reference Types
+✅ Boxing and Unboxing
+✅ Operators
+✅ Control Flow Statements
+✅ Methods and Parameters
+✅ OOP Principles
+✅ Constructors and Access Modifiers
+✅ Interfaces and Abstract Classes
+✅ Arrays and Basic Collections
+
+
+C# Interview Questions (Basic to Architect) – Part 2 (Questions 101–200)
+Section 8: Generics (101–115)
+	1. What are generics in C#? 
+	2. Why were generics introduced? 
+	3. What are the benefits of generics? 
+	4. Difference between generic and non-generic collections? 
+	5. What is a generic class? 
+	6. What is a generic method? 
+	7. What is a generic interface? 
+	8. What are generic constraints? 
+	9. Explain the where T : class constraint. 
+	10. Explain the where T : struct constraint. 
+	11. Explain the where T : new() constraint. 
+	12. What is the where T : unmanaged constraint? 
+	13. Can a generic type inherit from another generic type? 
+	14. What is covariance in generics? 
+	15. What is contravariance in generics? 
+
+Section 9: Collections (116–135)
+	1. Difference between Array and List<T>? 
+	2. What is List<T>? 
+	3. What is Dictionary<TKey, TValue>? 
+	4. Difference between Dictionary and Hashtable? 
+	5. What is SortedDictionary? 
+	6. What is SortedList? 
+	7. What is Queue<T>? 
+	8. What is Stack<T>? 
+	9. What is HashSet<T>? 
+	10. Difference between HashSet and List? 
+	11. What is LinkedList<T>? 
+	12. What is ConcurrentDictionary? 
+	13. What is BlockingCollection? 
+	14. What are immutable collections? 
+	15. What collection would you choose for fast lookups? 
+	16. What collection would you choose for FIFO operations? 
+	17. What collection would you choose for LIFO operations? 
+	18. How does Dictionary hashing work? 
+	19. What causes hash collisions? 
+	20. How do you optimize collection performance? 
+
+Section 10: Exception Handling (136–150)
+	1. What is exception handling? 
+	2. Difference between compile-time and runtime errors? 
+	3. What is try-catch-finally? 
+	4. Can multiple catch blocks be used? 
+	5. What is a custom exception? 
+	6. Why should custom exceptions inherit from Exception? 
+	7. Difference between throw and throw ex? 
+	8. What happens if an exception occurs in finally? 
+	9. What are exception filters? 
+	10. How do you log exceptions? 
+	11. What are aggregate exceptions? 
+	12. What is the purpose of InnerException? 
+	13. What are best practices for exception handling? 
+	14. When should exceptions not be used? 
+	15. How do you design exception strategies in enterprise applications? 
+
+Section 11: Delegates and Events (151–170)
+	1. What is a delegate? 
+	2. Why are delegates used? 
+	3. What is a multicast delegate? 
+	4. Difference between delegate and interface? 
+	5. What is the Action delegate? 
+	6. What is the Func delegate? 
+	7. What is the Predicate delegate? 
+	8. What are anonymous methods? 
+	9. What are lambda expressions? 
+	10. Difference between lambda expressions and anonymous methods? 
+	11. What is an event? 
+	12. How do events work internally? 
+	13. What is EventHandler? 
+	14. What is EventHandler<T>? 
+	15. How do you declare an event? 
+	16. What are event accessors? 
+	17. What is publisher-subscriber architecture? 
+	18. Can delegates return values? 
+	19. Can delegates be chained? 
+	20. What are common use cases of delegates? 
+
+Section 12: LINQ Basics (171–185)
+	1. What is LINQ? 
+	2. What problems does LINQ solve? 
+	3. What are LINQ providers? 
+	4. What is LINQ to Objects? 
+	5. What is LINQ to XML? 
+	6. What is LINQ to Entities? 
+	7. Difference between IEnumerable and IQueryable? 
+	8. What is deferred execution? 
+	9. What is immediate execution? 
+	10. What is Select()? 
+	11. What is Where()? 
+	12. What is OrderBy()? 
+	13. What is GroupBy()? 
+	14. What is FirstOrDefault()? 
+	15. What are the advantages of LINQ? 
+
+Section 13: File Handling (186–193)
+	1. What is the System.IO namespace? 
+	2. What is the File class? 
+	3. What is the Directory class? 
+	4. Difference between File and FileInfo? 
+	5. What is Stream? 
+	6. What is StreamReader? 
+	7. What is StreamWriter? 
+	8. What are best practices for file handling? 
+
+Section 14: Reflection and Attributes (194–197)
+	1. What is reflection? 
+	2. What are common uses of reflection? 
+	3. What are attributes? 
+	4. How do you create custom attributes? 
+
+Section 15: Nullable Reference Types (198–200)
+	1. What are nullable reference types? 
+	2. What problem do nullable reference types solve? 
+	3. Difference between nullable value types and nullable reference types? 
+
+Scenario-Based Questions (Senior Developer Level)
+Delegates and Events
+	• When would you choose events over interfaces? 
+	• How would you design a notification system using delegates? 
+Collections
+	• How would you store millions of records requiring frequent lookups? 
+	• Which collection would you use in a multithreaded environment? 
+Exception Handling
+	• How would you design a global exception strategy for an enterprise application? 
+	• How do you distinguish between business exceptions and technical exceptions? 
+LINQ
+	• How would you optimize a slow LINQ query? 
+	• When would you prefer IQueryable over IEnumerable? 
+Reflection
+	• What are the performance implications of reflection? 
+	• When should reflection be avoided? 
+
+Topics Covered in Part 2
+✅ Generics
+✅ Collection Framework
+✅ Exception Handling
+✅ Delegates and Events
+✅ Lambda Expressions
+✅ LINQ Fundamentals
+✅ File Handling
+✅ Reflection
+✅ Attributes
+✅ Nullable Reference Types
+
+
+C# Interview Questions (Basic to Architect) – Part 3 (Questions 201–300)
+Section 16: Advanced LINQ (201–215)
+	1. Difference between IEnumerable and IQueryable?
+	2. What is deferred execution?
+	3. What is immediate execution?
+	4. What is projection in LINQ?
+	5. What is SelectMany()?
+	6. Difference between First(), FirstOrDefault(), Single(), and SingleOrDefault()?
+	7. What is Any()?
+	8. What is All()?
+	9. Difference between Cast() and OfType()?
+	10. What is Join() in LINQ?
+	11. What is GroupJoin()?
+	12. What is Zip()?
+	13. What are expression trees?
+	14. How does Entity Framework translate LINQ queries?
+	15. How do you optimize LINQ queries?
+
+Section 17: Async Programming (216–235)
+	1. What is asynchronous programming?
+	2. Difference between synchronous and asynchronous programming?
+	3. What is the async keyword?
+	4. What is the await keyword?
+	5. What is a Task?
+	6. Difference between Task and Thread?
+	7. What is Task<TResult>?
+	8. What is ValueTask?
+	9. When should ValueTask be used?
+	10. What is ConfigureAwait(false)?
+	11. What is SynchronizationContext?
+	12. How can deadlocks occur with async/await?
+	13. What is Task.Run()?
+	14. What is Task.WhenAll()?
+	15. What is Task.WhenAny()?
+	16. What is cancellation in asynchronous programming?
+	17. What is CancellationToken?
+	18. How do you cancel a running task?
+	19. What are async streams?
+	20. What is IAsyncEnumerable<T>?
+
+Section 18: Threading and Concurrency (236–250)
+	1. What is multithreading?
+	2. Difference between process and thread?
+	3. What is the ThreadPool?
+	4. What is a race condition?
+	5. What is thread safety?
+	6. What is locking?
+	7. How does the lock keyword work?
+	8. What is Monitor?
+	9. Difference between lock and Monitor?
+	10. What is Mutex?
+	11. What is Semaphore?
+	12. What is SemaphoreSlim?
+	13. What is Interlocked?
+	14. What is ConcurrentDictionary?
+	15. How do you design thread-safe applications?
+
+Section 19: Memory Management and Garbage Collection (251–265)
+	1. What is Garbage Collection (GC)?
+	2. Why is GC needed?
+	3. What are GC generations?
+	4. What is Generation 0?
+	5. What is Generation 1?
+	6. What is Generation 2?
+	7. What is Large Object Heap (LOH)?
+	8. What triggers garbage collection?
+	9. What is memory pressure?
+	10. What is finalization?
+	11. Difference between Dispose and Finalize?
+	12. What is the Dispose Pattern?
+	13. What is GC.SuppressFinalize()?
+	14. What are weak references?
+	15. How do you diagnose memory leaks?
+
+Section 20: IDisposable and Resource Management (266–270)
+	1. Why implement IDisposable?
+	2. How do you implement IDisposable correctly?
+	3. What is the using statement?
+	4. What is using declaration?
+	5. What resources typically require disposal?
+
+Section 21: Modern C# Features (271–285)
+	1. What are records?
+	2. Difference between records and classes?
+	3. What are init-only properties?
+	4. What is pattern matching?
+	5. What is type pattern matching?
+	6. What is property pattern matching?
+	7. What is relational pattern matching?
+	8. What are switch expressions?
+	9. What are tuples?
+	10. Difference between Tuple and ValueTuple?
+	11. What are deconstruction methods?
+	12. What are target-typed new expressions?
+	13. What are global using directives?
+	14. What are file-scoped namespaces?
+	15. What are required members?
+
+Section 22: High-Performance C# (286–295)
+	1. What is Span<T>?
+	2. What is ReadOnlySpan<T>?
+	3. What is Memory<T>?
+	4. Difference between Span and Memory?
+	5. What are stackalloc expressions?
+	6. What are pooled objects?
+	7. How do you minimize allocations?
+	8. How do you improve application performance?
+	9. What tools can be used for performance profiling?
+	10. How do you identify bottlenecks in .NET applications?
+
+Section 23: Architect-Level Scenario Questions (296–300)
+	1. How would you design a high-performance C# application processing millions of transactions per day?
+	2. A production application is experiencing memory leaks. How would you investigate and resolve the issue?
+	3. Your team is heavily using async/await. What guidelines would you establish to avoid deadlocks, thread starvation, and performance issues?
+	4. When would you choose parallel processing over asynchronous programming, and what trade-offs would you consider?
+	5. As a .NET Architect, what coding standards, performance practices, and design principles would you mandate across all C# projects?
+
+Architect-Level Topics You Must Master
+To move from Senior Developer to .NET Architect, you should be comfortable discussing and applying:
+Language and Runtime
+	• CLR Internals
+	• JIT Compilation
+	• Garbage Collection
+	• Memory Management
+	• IDisposable Pattern
+Concurrency
+	• Async/Await Internals
+	• ThreadPool
+	• Synchronization Primitives
+	• Cancellation Patterns
+	• Concurrent Collections
+Performance
+	• Span<T> and Memory<T>
+	• Allocation Reduction Techniques
+	• Profiling and Diagnostics
+	• Benchmarking
+	• High-throughput Design
+Modern C#
+	• Records
+	• Pattern Matching
+	• Init-only Properties
+	• Nullable Reference Types
+	• File-scoped Namespaces
+	• Required Members
+Architecture and Code Quality
+	• SOLID Principles
+	• Clean Code Practices
+	• Domain Modeling
+	• Error Handling Strategies
+	• Coding Standards
+	• Observability Considerations
+
+

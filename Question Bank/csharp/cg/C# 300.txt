@@ -1,0 +1,350 @@
+# C# 300
+
+# **C# Interview Questions — 300 Questions (Full List)**
+
+Organized into clean sections.
+
+---
+
+# * Section 1 — C# Basics (1–30)**
+
+1. What is C#?
+2. What are the main features of C#?
+3. What is the .NET Framework?
+4. What is the CLR?
+5. What is JIT compilation?
+6. What is the difference between JIT and AOT?
+7. What is the difference between C# and .NET?
+8. What is a namespace?
+9. What is an assembly?
+10. What is the difference between exe and dll?
+11. What are value types?
+12. What are reference types?
+13. Difference between stack and heap memory?
+14. What are nullable types?
+15. What is boxing?
+16. What is unboxing?
+17. What is a class?
+18. What is an object?
+19. What is a struct?
+20. Difference between struct and class?
+21. What is an enum?
+22. What is a constructor?
+23. Types of constructors in C#?
+24. What is a static constructor?
+25. What is a destructor?
+26. What is the “using” keyword?
+27. What is type inference?
+28. What is `var` vs `dynamic`?
+29. What is the difference between == and Equals()?
+30. What is the difference between const and readonly?
+
+---
+
+# * Section 2 — OOP Concepts (31–70)**
+
+1. What is OOP?
+2. What is inheritance?
+3. What is polymorphism?
+4. What is encapsulation?
+5. What is abstraction?
+6. What is method overloading?
+7. What is method overriding?
+8. What is virtual keyword?
+9. What is override keyword?
+10. What is sealed class?
+11. What is an abstract class?
+12. What is an interface?
+13. Differences between abstract class and interface?
+14. Can interfaces contain fields?
+15. Can interfaces have default implementations?
+16. What is multiple inheritance?
+17. Does C# support multiple inheritance?
+18. What is explicit interface implementation?
+19. What is dependency injection?
+20. What is tightly coupled vs loosely coupled?
+21. What is composition?
+22. What is aggregation?
+23. What are extension methods?
+24. What are partial classes?
+25. What are sealed methods?
+26. What are indexers?
+27. What are properties?
+28. Auto-implemented properties?
+29. What is encapsulation in C#?
+30. What is a delegate?
+31. What is a multicast delegate?
+32. What is an event?
+33. Difference between event and delegate?
+34. What is a lambda expression?
+35. What is anonymous method?
+36. What is operator overloading?
+37. Can you overload every operator?
+38. What is shadowing vs overriding?
+39. What is `base` keyword?
+40. What is `this` keyword?
+
+---
+
+# * Section 3 — Collections & Generics (71–110)**
+
+1. What are collections in C#?
+2. Difference between Array and List?
+3. What is ArrayList?
+4. Differences between List and ArrayList?
+5. What is Dictionary?
+6. What is HashSet?
+7. What is SortedList?
+8. What is Queue?
+9. What is Stack?
+10. What is LinkedList?
+11. What is ICollection vs IEnumerable?
+12. What is IEnumerator?
+13. What is IQueryable?
+14. What is yield return?
+15. What is deferred execution?
+16. What is generics?
+17. Benefits of generics?
+18. What is generic class?
+19. What is generic method?
+20. What are generic constraints?
+21. What is covariance?
+22. What is contravariance?
+23. Difference between IEnumerable<T> and IQueryable<T>?
+24. What is LINQ?
+25. What are LINQ providers?
+26. What is LINQ to Objects?
+27. What is LINQ to SQL?
+28. What is LINQ to XML?
+29. How does LINQ work internally?
+30. What is Expression Tree?
+31. What is AsEnumerable?
+32. What is AsQueryable?
+33. What is Select vs SelectMany?
+34. What is Single vs SingleOrDefault?
+35. What is First vs FirstOrDefault?
+36. Difference between Take and Skip?
+37. What is GroupBy?
+38. What is Join in LINQ?
+39. What is Any vs All?
+40. What is Distinct?
+
+---
+
+# * Section 4 — Exception Handling (111–140)**
+
+1. What is exception handling?
+2. What is try-catch?
+3. What is finally block?
+4. Can finally block skip execution?
+5. What is throw vs throw ex?
+6. What are custom exceptions?
+7. What is the exception hierarchy?
+8. What is StackTrace?
+9. What is InnerException?
+10. What is AggregateException?
+11. What is TaskCancelledException?
+12. What is NullReferenceException?
+13. What is InvalidOperationException?
+14. What is ArgumentNullException?
+15. What is ArgumentException?
+16. What is FormatException?
+17. What is FileNotFoundException?
+18. What is exception filtering?
+19. What is global exception handling?
+20. What is UnhandledException?
+21. What is AppDomain exceptions?
+22. What is `Environment.FailFast`?
+23. What is stack overflow exception?
+24. What is OutOfMemoryException?
+25. When not to use exceptions?
+26. What is rethrowing an exception?
+27. What is FaultException?
+28. What is ExceptionDispatchInfo?
+29. What is error logging?
+30. What is retry logic?
+
+---
+
+# * Section 5 — Asynchronous, Parallel, Multithreading (141–190)**
+
+1. What is multithreading?
+2. What is a thread?
+3. What is ThreadPool?
+4. What is Task Parallel Library (TPL)?
+5. What is async/await?
+6. What is deadlock?
+7. What is race condition?
+8. What is lock keyword?
+9. What is Monitor class?
+10. What is Mutex?
+11. What is Semaphore?
+12. Difference between Semaphore and SemaphoreSlim?
+13. What is AutoResetEvent?
+14. What is ManualResetEvent?
+15. What is CancellationToken?
+16. What is IAsyncEnumerable?
+17. What is ConfigureAwait?
+18. What is thread affinity?
+19. What is synchronization context?
+20. What is Parallel.For?
+21. What is Parallel LINQ (PLINQ)?
+22. What is ConcurrentDictionary?
+23. What is ConcurrentQueue?
+24. What is ConcurrentBag?
+25. What is BlockingCollection?
+26. What is Task.Run?
+27. What is ValueTask?
+28. What is async void?
+29. Why async void is dangerous?
+30. What is thread starvation?
+31. What is context switching?
+32. What is a background thread?
+33. What is a foreground thread?
+34. What is thread-safe code?
+35. What is lock-free programming?
+36. What is memory barrier?
+37. What is Interlocked class?
+38. What is TaskCompletionSource?
+39. What is Parallel.Invoke?
+40. What is WaitAll vs WhenAll?
+41. What is Task.Wait?
+42. What is Task.Result?
+43. Difference between Task and Thread?
+44. What is async stream?
+45. What is producer-consumer pattern?
+46. What is reactive programming?
+47. What is Rx.NET?
+48. What is IObservable?
+49. What is IObserver?
+50. What is TPL Dataflow?
+
+---
+
+# * Section 6 — Memory Management & GC (191–220)**
+
+1. What is garbage collection?
+2. What are GC generations?
+3. What is Gen 0?
+4. What is Gen 1?
+5. What is Gen 2?
+6. What is ephemeral segment?
+7. What is LOH (Large Object Heap)?
+8. What is memory leak in C#?
+9. Can managed code leak memory?
+10. What is IDisposable?
+11. What is finalize?
+12. Difference between Dispose & Finalize?
+13. How GC works internally?
+14. What is GC.Collect()?
+15. Why GC.Collect() should not be used?
+16. What is Memory Pressure?
+17. What is WeakReference?
+18. What is pinned memory?
+19. What is SafeHandle?
+20. What is Span<T>?
+21. What is Memory<T>?
+22. What is stackalloc?
+23. What is unsafe code?
+24. What is fixed keyword?
+25. What is ref struct?
+26. What is value task allocation?
+27. What is stack vs heap performance?
+28. What is array pooling?
+29. What is object pooling?
+30. What is SOH?
+
+---
+
+# * Section 7 — .NET Core & .NET 5/6/7/8 (221–245)**
+
+1. What is .NET Core?
+2. Differences between .NET Framework and .NET Core?
+3. What is cross-platform?
+4. What is the runtime host?
+5. What is Dependency Injection in .NET Core?
+6. What are middleware components?
+7. What is Kestrel?
+8. What is appsettings.json?
+9. What is configuration pipeline?
+10. What is logging pipeline?
+11. What are hosted services?
+12. What is IHostedService?
+13. What is BackgroundService?
+14. What is minimal API?
+15. What is top-level statements?
+16. What is GCSettings?
+17. What is trimming?
+18. What is self-contained deployment?
+19. What is single-file deployment?
+20. What is NativeAOT?
+21. What are global usings?
+22. What is source generator?
+23. What is implicit namespaces?
+24. What is nullable reference types?
+25. What is record type?
+
+---
+
+# * Section 8 — ASP.NET / Web API (246–275)**
+
+1. What is ASP.NET Core?
+2. What is middleware?
+3. What is routing?
+4. What is endpoint routing?
+5. What is MVC?
+6. What is REST API?
+7. HTTP GET vs POST vs PUT vs DELETE?
+8. What is model binding?
+9. What is model validation?
+10. What is filters?
+11. What is dependency injection in ASP.NET?
+12. What is IHttpClientFactory?
+13. What is CORS?
+14. What is authentication vs authorization?
+15. What is JWT?
+16. What is claims-based identity?
+17. What is Swagger?
+18. What is OpenAPI?
+19. What is versioning in APIs?
+20. What is rate limiting?
+21. What is caching?
+22. What is distributed cache?
+23. What is response compression?
+24. What is output caching?
+25. What is SignalR?
+26. What is gRPC?
+27. What is WebSockets?
+28. What is health check middleware?
+29. What is API gateway?
+30. What is OData?
+
+---
+
+# * Section 9 — Architecture, Patterns, Testing (276–300)**
+
+1. What is SOLID?
+2. What is SRP?
+3. What is OCP?
+4. What is LSP?
+5. What is ISP?
+6. What is DIP?
+7. What is repository pattern?
+8. What is unit of work?
+9. What is CQRS?
+10. What is Mediator pattern?
+11. What is factory pattern?
+12. What is builder pattern?
+13. What is singleton?
+14. What is prototype?
+15. What is facade?
+16. What is decorator?
+17. What is strategy pattern?
+18. What is observer pattern?
+19. What is DI vs IoC?
+20. What is TDD?
+21. What is unit testing?
+22. What is mocking?
+23. What is integration testing?
+24. What is load testing?
+25. What is clean architecture?

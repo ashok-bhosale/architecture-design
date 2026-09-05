@@ -1,2 +1,16 @@
 https://excalidraw.com/
 https://app.diagrams.net/
+
+Important area 
+
+🏗️ System architecture diagram
+🖥️ Frontend → API Gateway → Microservices
+🗄️ SQL / MongoDB / Redis
+☁️ Azure / AWS cloud services
+🔄 Event-driven architecture
+📊 Performance & monitoring panels
+🔐 Security layer
+📦 Docker / Kubernetes
+👥 Users, traffic and service health
+📈 CPU, memory, latency and error-rate charts
+🎨 Large-screen 16:9 professional dashboard layout

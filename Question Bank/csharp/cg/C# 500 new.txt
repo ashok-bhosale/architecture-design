@@ -1,0 +1,515 @@
+# C# 500 New
+
+Top 500 .NET Interview Questions
+Covers: .NET/Core, C#, ASP.NET Core MVC & Web API, Async, REST, Swagger/OpenAPI, Unit/Integration
+Testing, EF Core, Microservices, Resilience, Caching, Docker, Kubernetes, Cloud, Observability, Security,
+Runtime & GC, High-Performance, and System Design.
+Part 1 — C#, .NET Core, ASP.NET Core MVC
+1. What are the main features of C# 12/11/10?
+2. What is the difference between ref and out keywords?
+3. Explain value types vs reference types.
+4. What is boxing and unboxing?
+5. What is a nullable type?
+6. What is the difference between dynamic and var?
+7. What is the difference between const and readonly?
+8. What is a struct? When should you use it?
+9. What is the difference between an interface and an abstract class?
+10. Can an interface contain fields? Why not?
+11. What are extension methods?
+12. What is LINQ?
+13. What is expression tree?
+14. What are delegates?
+15. What are Func, Action, and Predicate delegates?
+16. What is an iterator? Explain yield.
+17. What is the difference between IEnumerable and IQueryable?
+18. What is covariance and contravariance?
+19. What are generics?
+20. What is the difference between public, private, protected, internal?
+21. Explain SOLID principles.
+22. What is dependency inversion?
+23. What is encapsulation?
+24. What is polymorphism?
+25. Difference between method overloading and overriding?
+26. What is a sealed class?
+27. What is a static constructor?
+28. What are partial classes?
+29. What is shallow copy vs deep copy?
+30. What is Dispose pattern?
+31. What is using statement in C#?
+32. What is GC?
+33. Explain WeakReference.
+34. What is thread safety?
+35. What is lock keyword?
+36. Explain thread vs task.
+37. What is async/await?
+38. What is deadlock in async?
+39. What is ConfigureAwait(false)?
+40. What is CancellationToken?
+41. .NET Core: What is it?
+42. Difference between .NET Framework and .NET Core?
+43. What is CLR?
+44. What is CoreCLR?
+45. Explain JIT vs AOT.
+46. What is cross-platform support in .NET Core?
+47. What is CSProj vs project.json?
+48. Explain Kestrel web server.
+49. What is Generic Host vs Web Host?
+50. What is Main() method in .NET Core?
+51. What is the Startup class?
+52. What is ConfigureServices() method?
+53. What is Configure() method?
+54. What are Middlewares?
+55. What is pipeline execution order?
+56. Explain IApplicationBuilder.
+57. What is HostBuilder?
+58. How configuration works in .NET Core?
+59. What are configuration providers?
+60. What are Options pattern?
+61. What is dependency injection?
+62. How to register services in DI?
+63. What is AddSingleton, AddScoped, AddTransient?
+64. What is service lifetime issue?
+65. How does .NET Core logging work?
+66. What is ILogger?
+67. How do you use Serilog?
+68. What is IHostedService?
+69. What are background worker services?
+70. What is gRPC in .NET Core?
+71. What is MVC pattern?
+72. How routing works in MVC?
+73. What is attribute routing?
+74. Difference between conventional vs attribute routing?
+75. What is Model Binding?
+76. What is ViewModel?
+77. What is ViewBag, ViewData, TempData?
+78. What is IActionResult?
+79. What is ActionResult?
+80. What is Razor View Engine?
+81. What are TagHelpers?
+82. What are ViewComponents?
+83. Difference between Partial View and ViewComponent?
+84. What is AntiForgeryToken?
+85. Explain filters in MVC.
+86. What is an action filter?
+87. How validation works?
+88. What is Data Annotation?
+89. How file uploads work in MVC?
+90. What is ModelState?
+91. What are Areas?
+92. What is Layout page?
+93. How do you handle exceptions in MVC?
+94. What is Global Exception Handling?
+95. What are middleware differences vs filters?
+96. How to secure MVC application?
+97. How to cache views?
+98. What is distributed cache?
+99. What are cookie-based authentication?
+100. How does session work in .NET Core?
+
+Part 2 — Web API, REST, Auth, Swagger, Microservices
+101. Key differences between MVC Controllers and API Controllers in ASP.NET Core?
+102. How to return problem details (RFC 7807) from APIs?
+103. Benefits of ApiController attribute?
+104. Model binding for complex vs simple types in Web API?
+105. How to validate input models and return errors consistently?
+106. Recommended status codes for create/update/delete/not found?
+107. How to implement pagination in Web APIs?
+108. What is content negotiation and how is it implemented?
+109. Support both JSON and XML in Web API?
+110. File uploads and large file streaming in Web API?
+111. Enable and configure CORS policies?
+112. Global filters vs middleware vs per-action filters?
+113. Centralize exception handling in Web API?
+114. Implement rate limiting or throttling in ASP.NET Core?
+115. Conditional requests with ETags/If-Modified-Since?
+116. Idempotency keys for POST operations—how?
+117. Design APIs to be backward compatible?
+118. API versioning strategies (URL, header, query)?
+119. What is ProblemDetails and how to extend it?
+120. Handle long-running jobs (202 Accepted + polling, webhooks)?
+121. Implement file downloads and range requests?
+122. Secure admin-only endpoints with policies?
+123. Streams vs byte arrays in responses—tradeoffs?
+124. Expose health checks for APIs?
+125. Return hypermedia links (HATEOAS)?
+126. Structure RESTful URL hierarchy for nested resources?
+127. Deprecate API endpoints gracefully?
+128. Protect against over-posting / mass assignment?
+129. Request/response compression?
+130. Pitfalls in System.Text.Json serialization?
+131. Core constraints of REST?
+132. Explain statelessness and its impact on scaling.
+133. Resource vs representation in REST?
+134. When to use PUT vs PATCH?
+135. Idempotent methods and which verbs are idempotent?
+136. 200 vs 201 vs 204 vs 202—when?
+137. Difference between 4xx and 5xx families?
+138. Design consistent error payloads across services?
+139. Pagination patterns (cursor vs offset)?
+140. What is HATEOAS and current relevance?
+141. Design for eventual consistency?
+142. Design a bulk API endpoint?
+143. Standardize trace IDs across microservices?
+144. API versioning (semantic vs date-based)?
+145. Handle breaking changes in APIs?
+146. Document APIs effectively (OpenAPI/Swagger)?
+147. What is an API contract and how to enforce it?
+148. Design rate limits per consumer tiers?
+149. Design multi-tenant APIs (headers, tokens, domains)?
+150. Backends for Frontends (BFF) pattern—when?
+151. Handle partial failures in composite endpoints?
+152. Richardson Maturity Model for REST?
+153. Model long-running operations (202 + retry-after + status)?
+154. Manage API lifecycle (design, publish, deprecate, retire)?
+155. What are API gateways and when to use them?
+156. Authentication vs authorization?
+157. OAuth 2.0 roles (resource owner, client, resource server, auth server)?
+158. What is OpenID Connect?
+159. What is JWT and its structure?
+160. Common JWT pitfalls (audience, TTLs)?
+161. Validate JWTs in ASP.NET Core?
+162. Role-based vs policy-based authorization?
+163. Scopes vs claims—differences?
+164. Secure Swagger UI behind authentication?
+165. Rotate signing keys—how?
+166. Refresh tokens—how to handle securely?
+167. What is PKCE and when needed?
+168. Client credentials flow for M2M APIs?
+169. Protect against CSRF/XSS/SSRF?
+170. Protect secrets in ASP.NET Core (Key Vault, user secrets)?
+171. HTTPS enforcement and HSTS?
+172. Per-tenant authorization policies?
+173. Resource-based authorization handlers?
+174. Certificate-based authentication between services?
+175. Secure storage & usage of API keys?
+176. IP allow/deny lists (middleware vs gateway)?
+177. What is mTLS and when to use it?
+178. Detect/mitigate brute-force / credential stuffing?
+179. Design a permission model (role, permission, resource, action)?
+180. Symmetric vs asymmetric signing for JWTs?
+181. What is OpenAPI (Swagger)?
+182. Generate OpenAPI docs with Swashbuckle?
+183. Annotate controllers/models for OpenAPI?
+184. Split a large OpenAPI spec?
+185. Document versioned APIs in Swagger?
+186. Expose multiple security schemes (JWT, API Key) in Swagger?
+187. Filter or group endpoints in Swagger UI?
+188. Customize operation IDs, schema names, and tags?
+189. Add custom headers and examples to Swagger?
+190. NSwag vs Swashbuckle—tradeoffs?
+191. Generate client SDKs from OpenAPI and keep in sync?
+192. Validate req/resp at runtime against OpenAPI?
+193. Publish OpenAPI docs to an API portal?
+194. Secure OpenAPI endpoints in production?
+195. Maintain backward compatibility of OpenAPI across releases?
+196. Benefits/trade-offs of microservices vs monoliths?
+197. Choose between REST, gRPC, and async messaging?
+198. What is the Saga pattern (orchestrated vs choreographed)?
+199. Ensure exactly-once or at-least-once semantics?
+200. Handle distributed transactions and outbox patterns?
+
+Part 3 — Microservices Patterns, Resilience, EF Core, CI/CD
+201. Criteria to split a monolith into microservices?
+202. Define service boundaries (business capability vs data-driven)?
+203. Orchestration vs choreography in microservices?
+204. Outbox pattern and dual-write prevention?
+205. Implement a saga for order processing?
+206. Eventual consistency and client communication?
+207. Detect and resolve circular dependencies between services?
+208. Domain event vs integration event?
+209. Event schema versioning over time?
+210. When prefer gRPC over REST internally?
+211. Idempotent REST endpoints for POST—how?
+212. Strategies for distributed locking?
+213. Propagate correlation IDs across services?
+214. Choosing a message broker (Kafka/RabbitMQ/Azure Service Bus)?
+215. Implement exactly-once with at-least-once infra?
+216. Transactional outbox + inbox pattern?
+217. Retries + deduplication in consumers?
+218. Bulkhead isolation between services?
+219. What is a service mesh and when to use it?
+220. Blue/green vs canary releases for microservices?
+221. API gateway vs BFF—roles?
+222. Multi-tenant microservices (DB-per-tenant vs schema vs shared)?
+223. Formalize contracts between services (OpenAPI/proto + CI)?
+224. Test microservices integration locally (Testcontainers, compose)?
+225. Data ownership and enforcement across services?
+226. CQRS benefits vs overkill?
+227. Read models for query performance in CQRS?
+228. Anti-corruption layer (ACL) and need?
+229. Mitigate hot partitions in event streams?
+230. Design id generation in distributed systems?
+231. Polly resilience policies (retry, circuit breaker, timeout, bulkhead, fallback)?
+232. Combine multiple policies (PolicyWrap)?
+233. Exponential backoff + jitter best practices?
+234. When to use circuit breakers and trigger metrics?
+235. Prevent retry storms?
+236. What is hedging and when to use it?
+237. Design time-outs at each layer?
+238. Choose idempotency keys and store them?
+239. Cache-aside vs write-through vs write-behind?
+240. Invalidate caches safely (token/version/event-driven)?
+241. Redis keys and eviction policies?
+242. Per user/tenant caching with proper scoping?
+243. Cache HTTP responses in ASP.NET Core?
+244. What is distributed cache and hook up Redis?
+245. Avoid thundering herd (request coalescing)?
+246. Handle stale data vs consistency (TTL, refresh-ahead)?
+247. Cache EF Core query results safely?
+248. Resilience metrics to track (retries, fallbacks, circuit states)?
+249. Fail fast vs graceful degradation?
+250. Test resilience (chaos testing, fault injection)?
+251. Prevent caching sensitive data?
+252. Apply rate limiting to external API calls?
+253. Implement request batching for performance?
+254. Token bucket vs leaky bucket algorithm?
+255. Handle 429 Too Many Requests programmatically?
+256. How EF Core change tracking works?
+257. Trade-offs between NoTracking and tracking queries?
+258. Optimize Include graphs and avoid cartesian explosions?
+259. Detect and avoid the N+1 query problem?
+260. Split vs Single query for Include—when?
+261. Profile EF Core queries (logs, interceptors, analyzers)?
+262. What are compiled queries and when useful?
+263. Map owned entity types and value objects?
+264. Implement soft deletes and global query filters?
+265. Implement auditing with interceptors?
+266. Handle concurrency (rowversion, concurrency tokens)?
+267. Efficient bulk operations considerations?
+268. Shadow properties—when to use?
+269. Model many-to-many relationships and join control?
+270. TPT/TPC/TPH inheritance mapping and trade-offs?
+271. Handle large object graphs and partial updates (PATCH/DTOs)?
+272. AsSplitQuery vs AsSingleQuery performance impact?
+273. Database-agnostic EF models (provider-specific annotations)?
+274. Manage migrations across environments?
+275. Seeding strategies for tenants/environments?
+276. Secure connection strings and rotate them?
+277. Transactions across multiple DbContexts/resources?
+278. Retry-on-failure for transient errors (SQL Azure)?
+279. DbContext pooling and caveats?
+280. Limit memory usage on large queries (paging, streaming, projection)?
+281. Filtered Include and emulation strategies?
+282. Tune parameter sniffing issues?
+283. Log generated SQL safely in production?
+284. Multi-tenancy with EF Core (schema vs discriminator)?
+285. Use FromSqlRaw safely and prevent SQL injection?
+286. Difference between ACID and BASE properties?
+287. Distributed transactions without 2PC (sagas/outbox)?
+288. Design idempotent consumers with message stores?
+289. Retry with backoff in consumers (Service Bus/DLQ)?
+290. Design poison message handling?
+291. Guarantee ordering (partitioning/sequence keys)?
+292. Design replay for event-driven systems?
+293. Manage schema evolution in messaging (Avro/JSON/proto)?
+294. Test end-to-end data flows (producer ® broker ® consumer)?
+295. Ensure idempotent writes to the database from consumers?
+296. Structure multi-stage YAML pipelines in Azure DevOps/GitHub Actions?
+297. Infrastructure as Code (Bicep/Terraform) for .NET solutions?
+298. Environment-specific configurations and secrets (Key Vault, variable groups)?
+299. Trunk-based development with feature flags and safe deploys?
+300. Automate database migrations safely in CI/CD (gates, backups, drift detection)?
+
+Part 4 — Docker, Kubernetes, Observability, Architecture
+301. What is Docker and why for .NET apps?
+302. Difference between a container and a VM?
+303. Docker images vs containers?
+304. Explain Dockerfile structure.
+305. What is multi-stage Docker build and why?
+306. Reduce Docker image size for .NET apps?
+307. ENTRYPOINT vs CMD?
+308. What is Docker Compose and dev usage?
+309. How to mount volumes in Docker?
+310. Pass environment variables securely to containers?
+311. Debug .NET code inside containers?
+312. What is container orchestration?
+313. Deterministic builds with pinned base images?
+314. Alpine-based images—when to use?
+315. Bind mounts vs volumes?
+316. Configure networking between multiple containers?
+317. Run EF Core migrations in Dockerized envs?
+318. Troubleshoot container startup failures?
+319. Use docker logs effectively?
+320. Healthcheck instruction in Dockerfile?
+321. Proper use of .dockerignore?
+322. Scan Docker images for vulnerabilities?
+323. What is a distroless container?
+324. Secure secrets inside containers?
+325. Docker layering and caching?
+326. Manage configuration across environments in containers?
+327. Handle file permissions in Linux containers?
+328. Local dev with Docker Compose tools?
+329. Linux containers vs Windows containers?
+330. Optimize .NET Core app startup time in a container?
+331. What is Kubernetes and why?
+332. What is kubelet?
+333. What are Pods?
+334. What is a Deployment?
+335. What is a ReplicaSet?
+336. Deployment vs StatefulSet?
+337. What is a DaemonSet?
+338. What is a Service in K8s?
+339. ClusterIP vs NodePort vs LoadBalancer?
+340. What is an Ingress controller?
+341. How do ConfigMaps work?
+342. How do Secrets work?
+343. Mount volumes in Pods?
+344. PersistentVolume vs PersistentVolumeClaim?
+345. Readiness vs liveness probes?
+346. Scale Pods automatically (HPA)?
+347. Perform rolling updates?
+348. What is a canary deployment?
+349. Pod eviction—troubleshooting?
+350. Role of etcd in K8s?
+351. Isolate namespaces?
+352. What is a network policy?
+353. Secure Pod-to-Pod communication?
+354. Tolerations and taints?
+355. Use Kubernetes Operators?
+356. Minikube vs Kind vs Docker Desktop K8s?
+357. Logging from apps running in K8s?
+358. Debug failing Pods (logs, exec, describe)?
+359. What is a sidecar container and use cases?
+360. Explain service mesh and problems it solves.
+361. What is distributed tracing and why important?
+362. What is OpenTelemetry?
+363. Instrument .NET APIs for tracing?
+364. What are spans and traces?
+365. Propagate trace IDs across microservices?
+366. What is W3C Trace Context?
+367. Export traces from .NET to Jaeger/Zipkin/App Insights?
+368. Structured logging and importance?
+369. Console logging vs structured JSON logging?
+370. Explain Serilog and benefits?
+371. Log enrichment and correlation?
+372. Avoid logging sensitive data?
+373. What is log sampling?
+374. Choose log retention policies?
+375. Capture metrics from .NET apps (Prometheus)?
+376. Difference between metrics, logs, and traces?
+377. What is RED method?
+378. What is USE method?
+379. Set up health checks in ASP.NET Core?
+380. Liveness vs readiness health checks?
+381. Add custom health checks (DB, cache, broker)?
+382. Build dashboards (Grafana, Kibana, App Insights)?
+383. Debug memory leaks in .NET?
+384. Capture full GC dumps in production?
+385. Tools for .NET performance (dotTrace, PerfView, dotMemory)?
+386. Troubleshoot thread pool starvation?
+387. Troubleshoot CPU spikes?
+388. What is APM?
+389. Capture custom application metrics?
+390. Test observability in CI/CD?
+391. What is Clean Architecture?
+392. Structure layers in Clean Architecture?
+393. Domain entities vs aggregates?
+394. Repository pattern?
+395. Unit of Work pattern?
+396. CQRS pattern?
+397. Difference between queries and commands?
+398. Mediator pattern?
+399. Factory pattern?
+400. Singleton pattern?
+
+Part 5 — Cloud, Security, Runtime & GC, Performance, System Design
+401. What is cloud-native architecture?
+402. What is the shared responsibility model in cloud?
+403. Compare Azure App Service vs AKS vs Azure Functions.
+404. What is Azure API Management and when to use it?
+405. API Gateway vs Reverse Proxy?
+406. Secure secrets using Azure Key Vault?
+407. What is Managed Identity and usage?
+408. Event Grid vs Service Bus vs Event Hub?
+409. Difference between queues and topics?
+410. Handle message ordering in Service Bus?
+411. What is dead-letter queue and handling?
+412. Implement distributed caching in Azure?
+413. Azure Redis Cache vs Memcached?
+414. What is Azure Front Door and when needed?
+415. Load Balancer vs Application Gateway?
+416. What is CDN and how it speeds up APIs?
+417. Configure autoscaling rules?
+418. What is an Availability Zone?
+419. Design multi-region failover systems?
+420. Ensure zero-downtime deployments in App Service?
+421. Explain Azure B2C authentication.
+422. Manage configuration using Azure App Configuration?
+423. Handle database failover in cloud?
+424. Cloud-native logging options (App Insights, CloudWatch)?
+425. Implement distributed tracing across cloud services?
+426. SNS vs SQS in AWS—differences?
+427. AWS Lambda vs Azure Functions—compare.
+428. Design event-driven systems in cloud?
+429. What is Infrastructure-as-Code (IaC)?
+430. Compare ARM/Bicep vs Terraform.
+431. What is OWASP Top 10 and why important?
+432. Prevent SQL injection in .NET applications?
+433. What is rate limiting and why do APIs need it?
+434. What is a replay attack and how to stop it?
+435. What is CSRF?
+436. What is XSS and how to mitigate it?
+437. Role-based vs permission-based authorization?
+438. Enforce HTTPS in .NET?
+439. What is HSTS and why critical?
+440. Protect connection strings and secrets in production?
+441. What is secure coding?
+442. Data encryption at rest vs in transit?
+443. Rotate keys or certificates—how?
+444. What is DDoS protection?
+445. What is SQL AlwaysEncrypted?
+446. Securely store API keys?
+447. What is OAuth token introspection?
+448. Prevent brute-force attacks?
+449. AuthN vs AuthZ?
+450. What is SSO (Single Sign-On)?
+451. What is SAML and how it differs from OAuth?
+452. What is a JWT Kid header?
+453. Detect token tampering?
+454. What is mutual TLS and where required?
+455. What is the Zero Trust model?
+456. RBAC vs ABAC?
+457. Implement row-level security?
+458. What is a security penetration test?
+459. What is a nonce and where used?
+460. What is CSP (Content Security Policy)?
+461. What is CLR?
+462. How does JIT compilation work?
+463. Difference between JIT, EconoJIT and NGen?
+464. What is ReadyToRun compilation?
+465. How does the .NET Garbage Collector work?
+466. Explain Generation 0, 1, 2 in GC.
+467. What is LOH (Large Object Heap)?
+468. How to reduce pressure on LOH?
+469. GC Server vs GC Workstation mode?
+470. Detect memory leaks in .NET?
+471. What causes Gen 2 GC spikes?
+472. What is Span and how it reduces allocations?
+473. What is Memory in .NET?
+474. Stack-allocated structures (Span, stackalloc)?
+475. How async/await affects memory?
+476. What is boxing allocation and avoiding it?
+477. How does the ThreadPool work internally?
+478. What is Tiered Compilation?
+479. What is PGO (Profile Guided Optimization)?
+480. How does .NET handle exception cost internally?
+481. What is a deadlock and how to avoid it?
+482. Semaphore vs mutex?
+483. What is ReaderWriterLockSlim?
+484. What is thread starvation?
+485. Async I/O vs CPU-bound tasks?
+486. Parallel.ForEach—when to use?
+487. What is a Completion Port?
+488. What is System.Threading.Channels and channels usage?
+489. Bounded vs unbounded channel?
+490. What is a background worker service?
+491. Avoid thread pool exhaustion?
+492. Safely cache async results?
+493. Difference between Task.Run and async I/O?
+494. Immutable data structures and why use them?
+495. Scale Web API to handle 100K+ requests/min?
+496. Design an API that handles millions of daily transactions—ensure scalability?
+497. Migrate a large monolith to microservices without downtime—how?
+498. Design a resilient payment system—key components and flows?
+499. Design a multi-tenant SaaS architecture—data and isolation strategies?
+500. Design a high-availability global application with zero downtime?

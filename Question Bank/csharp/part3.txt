@@ -1,0 +1,332 @@
+ASP.NET Core Web API – Top 300 Interview Questions (Basic to Architect Level)
+1. Web API Fundamentals (1–25)
+	1. What is ASP.NET Core Web API?
+	2. What are RESTful services?
+	3. What are the principles of REST architecture?
+	4. What are HTTP methods?
+	5. Explain GET, POST, PUT, PATCH, and DELETE.
+	6. What is idempotency?
+	7. What is statelessness?
+	8. What is a resource in REST?
+	9. What is URI design?
+	10. What is content negotiation?
+	11. What is MIME type?
+	12. What are HTTP status codes?
+	13. Difference between 200 and 201?
+	14. Difference between 400 and 422?
+	15. Difference between 401 and 403?
+	16. Difference between 404 and 204?
+	17. What is a REST constraint?
+	18. What are HATEOAS principles?
+	19. What is Richardson Maturity Model?
+	20. SOAP vs REST?
+	21. What is JSON?
+	22. What is XML serialization?
+	23. What is Web API versioning?
+	24. What are Minimal APIs?
+	25. When should you use Web APIs?
+2. ASP.NET Core Basics (26–50)
+	26. Explain the ASP.NET Core architecture.
+	27. What is Kestrel?
+	28. What is IIS Integration?
+	29. What is the Generic Host?
+	30. What is the role of Program.cs?
+	31. What is dependency injection?
+	32. Explain service registration.
+	33. What are service lifetimes?
+	34. Explain Singleton lifetime.
+	35. Explain Scoped lifetime.
+	36. Explain Transient lifetime.
+	37. What is middleware?
+	38. Explain the middleware pipeline.
+	39. What is endpoint routing?
+	40. What is configuration in ASP.NET Core?
+	41. What is appsettings.json?
+	42. What are environment variables?
+	43. What are launch settings?
+	44. What are secrets in ASP.NET Core?
+	45. What is Options Pattern?
+	46. What is IOptions?
+	47. What is IOptionsSnapshot?
+	48. What is IOptionsMonitor?
+	49. Explain hosting environments.
+	50. Development vs Production environment?
+3. Controllers and Routing (51–75)
+	51. What is an API Controller?
+	52. What does [ApiController] do?
+	53. What is attribute routing?
+	54. Conventional routing?
+	55. Route constraints?
+	56. Optional route parameters?
+	57. Route tokens?
+	58. What is IActionResult?
+	59. ActionResult?
+	60. JsonResult?
+	61. StatusCodeResult?
+	62. OkResult?
+	63. CreatedResult?
+	64. BadRequestResult?
+	65. UnauthorizedResult?
+	66. ForbidResult?
+	67. NotFoundResult?
+	68. NoContentResult?
+	69. Difference between Ok() and Created()?
+	70. What is CreatedAtAction()?
+	71. What is CreatedAtRoute()?
+	72. How are routes matched?
+	73. What is route precedence?
+	74. How do you handle route conflicts?
+	75. Routing best practices?
+4. Model Binding and Validation (76–100)
+	76. What is model binding?
+	77. Explain binding sources.
+	78. What is [FromBody]?
+	79. What is [FromQuery]?
+	80. What is [FromRoute]?
+	81. What is [FromHeader]?
+	82. What is [FromForm]?
+	83. What is ModelState?
+	84. How does validation work?
+	85. What are data annotations?
+	86. Explain [Required].
+	87. Explain [StringLength].
+	88. Explain [Range].
+	89. Explain [RegularExpression].
+	90. Custom validation attributes?
+	91. FluentValidation?
+	92. Validation filters?
+	93. DTOs?
+	94. Why use DTOs?
+	95. AutoMapper?
+	96. Manual mapping?
+	97. Request validation strategies?
+	98. Response validation?
+	99. Preventing over-posting?
+	100. Model binding best practices?
+5. Dependency Injection (101–120)
+	101. What is dependency inversion?
+	102. Benefits of DI?
+	103. Constructor injection?
+	104. Method injection?
+	105. Property injection?
+	106. Explain ServiceCollection.
+	107. Explain ServiceProvider.
+	108. Open generic registration?
+	109. Factory registration?
+	110. Multiple implementations?
+	111. Keyed services?
+	112. Lazy injection?
+	113. Circular dependencies?
+	114. Scoped services in Singleton?
+	115. Service locator anti-pattern?
+	116. What is IServiceScopeFactory?
+	117. Background service dependencies?
+	118. Configuration injection?
+	119. Unit testing with DI?
+	120. DI best practices?
+6. Middleware and Filters (121–145)
+	121. What is middleware?
+	122. Difference between Use() and Run()?
+	123. What is Map()?
+	124. Custom middleware?
+	125. Middleware execution order?
+	126. Exception middleware?
+	127. Logging middleware?
+	128. Authentication middleware?
+	129. Authorization middleware?
+	130. CORS middleware?
+	131. Response compression middleware?
+	132. What are filters?
+	133. Authorization filter?
+	134. Action filter?
+	135. Exception filter?
+	136. Result filter?
+	137. Resource filter?
+	138. Global filters?
+	139. Filter execution order?
+	140. Middleware vs Filters?
+	141. Custom filters?
+	142. Async filters?
+	143. Dependency injection in filters?
+	144. When to use middleware?
+	145. When to use filters?
+7. Authentication and Authorization (146–180)
+	146. Authentication vs Authorization?
+	147. What is JWT?
+	148. JWT structure?
+	149. Claims?
+	150. Roles?
+	151. Policy-based authorization?
+	152. Role-based authorization?
+	153. Claims-based authorization?
+	154. What is OAuth2?
+	155. What is OpenID Connect?
+	156. What is Microsoft Entra ID?
+	157. What is Azure AD B2C?
+	158. Cookie authentication?
+	159. JWT authentication?
+	160. Refresh tokens?
+	161. Access tokens?
+	162. Token expiration?
+	163. Token revocation?
+	164. Custom authorization handlers?
+	165. Authorization requirements?
+	166. MFA?
+	167. Single Sign-On?
+	168. API Key authentication?
+	169. Certificate authentication?
+	170. Secure secret storage?
+	171. Azure Key Vault?
+	172. What is HSTS?
+	173. Preventing CSRF?
+	174. Preventing XSS?
+	175. HTTPS enforcement?
+	176. Security headers?
+	177. Identity framework?
+	178. Authentication events?
+	179. Multiple authentication schemes?
+	180. Security best practices?
+8. Entity Framework Core with APIs (181–215)
+	181. What is EF Core?
+	182. DbContext?
+	183. DbSet?
+	184. Change tracking?
+	185. AsNoTracking()?
+	186. Code First?
+	187. Database First?
+	188. Migrations?
+	189. Relationships?
+	190. Eager loading?
+	191. Lazy loading?
+	192. Explicit loading?
+	193. Include()?
+	194. ThenInclude()?
+	195. Transactions?
+	196. SaveChangesAsync()?
+	197. Optimistic concurrency?
+	198. RowVersion?
+	199. Raw SQL queries?
+	200. Stored procedures?
+	201. Query filters?
+	202. Value converters?
+	203. Shadow properties?
+	204. Soft delete?
+	205. Audit columns?
+	206. Repository pattern?
+	207. Unit of Work?
+	208. IQueryable vs IEnumerable?
+	209. N+1 problem?
+	210. Split queries?
+	211. Connection pooling?
+	212. Compiled queries?
+	213. Bulk operations?
+	214. EF Core performance tuning?
+	215. EF Core best practices?
+9. Logging and Exception Handling (216–230)
+	216. What is ILogger?
+	217. Log levels?
+	218. Structured logging?
+	219. Serilog?
+	220. NLog?
+	221. Global exception handling?
+	222. ProblemDetails?
+	223. Exception middleware?
+	224. Logging correlation IDs?
+	225. Request logging?
+	226. Application Insights?
+	227. OpenTelemetry?
+	228. Distributed tracing?
+	229. Health checks?
+	230. Monitoring best practices?
+10. API Documentation and Versioning (231–245)
+	231. What is Swagger?
+	232. What is OpenAPI?
+	233. How do you configure Swagger?
+	234. Custom Swagger documentation?
+	235. API Versioning?
+	236. URL versioning?
+	237. Header versioning?
+	238. Query string versioning?
+	239. Media type versioning?
+	240. Deprecating APIs?
+	241. Backward compatibility?
+	242. Consumer-driven contracts?
+	243. OpenAPI security definitions?
+	244. Swagger examples?
+	245. Documentation best practices?
+11. Performance and Scalability (246–270)
+	246. Response caching?
+	247. Output caching?
+	248. Memory cache?
+	249. Distributed cache?
+	250. Redis?
+	251. Compression middleware?
+	252. Pagination?
+	253. Cursor-based pagination?
+	254. Streaming responses?
+	255. Async programming benefits?
+	256. Connection pooling?
+	257. Database optimization?
+	258. Query optimization?
+	259. Rate limiting?
+	260. API throttling?
+	261. Load balancing?
+	262. Horizontal scaling?
+	263. Vertical scaling?
+	264. Circuit breaker pattern?
+	265. Retry pattern?
+	266. Bulkhead pattern?
+	267. Queue-based load leveling?
+	268. CDN usage?
+	269. High availability?
+	270. Scalability best practices?
+12. Testing Web APIs (271–285)
+	271. Unit testing controllers?
+	272. Integration testing APIs?
+	273. WebApplicationFactory?
+	274. Mocking dependencies?
+	275. Moq framework?
+	276. Testing authentication?
+	277. Testing authorization?
+	278. Testing middleware?
+	279. Testing filters?
+	280. API contract testing?
+	281. Postman collections?
+	282. Newman?
+	283. Load testing?
+	284. Performance testing?
+	285. Test automation strategies?
+13. Microservices and Architect-Level Questions (286–300)
+	286. Monolith vs Microservices?
+	287. API Gateway?
+	288. Ocelot?
+	289. YARP?
+	290. Service discovery?
+	291. RabbitMQ integration?
+	292. Azure Service Bus integration?
+	293. Event-driven architecture?
+	294. CQRS with Web APIs?
+	295. Saga pattern?
+	296. Outbox pattern?
+	297. Eventual consistency?
+	298. Designing APIs for 1 million users?
+	299. How would you secure enterprise APIs?
+	300. How would you design a scalable, highly available ASP.NET Core Web API solution on Azure?
+High-Priority Topics for 2026 Senior .NET Architect Interviews
+Focus extra effort on:
+	• ASP.NET Core 8/9 Web API internals
+	• JWT, OAuth2, OpenID Connect
+	• Middleware and filters
+	• EF Core performance optimization
+	• Global exception handling with ProblemDetails
+	• OpenTelemetry and observability
+	• Redis caching
+	• API versioning strategies
+	• Rate limiting and resilience patterns (Polly)
+	• Microservices integration patterns
+	• Docker and Kubernetes deployment
+	• Azure API Management and Application Insights
+	• System design and trade-off discussions
+If you can confidently answer these 300 questions with practical examples from projects you've built, you'll be well prepared for Senior Developer, Technical Lead, and Solution Architect interviews focused on ASP.NET Core Web APIs.
+
+From <https://chatgpt.com/c/6a23e92d-00d4-83e8-abd9-10c5b8a5c06d> 
